@@ -1,0 +1,78 @@
+package otherApps;
+
+import java.net.MalformedURLException;
+
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.BaseAppium;
+import util.ScreenshotListener;
+
+public class NewTest {
+	AndroidDriver androidDriver;
+	//"下次再校"弹窗
+	String nextButtonId = "android:id/button2";
+	//对星罗盘图片id
+	String compassImgId = "com.gh.staraccess:id/star_pan";
+	String frontText = "//*[contains(@text, '前方')]";
+	String cButtonId = "com.android.calculator2:id/clear";
+	//打开对星助手
+    @Test
+    public void openOppositeStar() {
+    	try{
+    		if(BaseAppium.id(nextButtonId) != null){
+        		BaseAppium.id(nextButtonId).click();
+        	}
+    	}catch(Exception e){
+    		
+    	}
+    	//对星罗盘存在则打开成功
+    	if(BaseAppium.id(compassImgId).isDisplayed()){
+    		Assert.assertEquals(1, 1, "打开对星助手失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开电子罗盘
+    @Test
+    public void openCompass() {
+    	Activity activity = new Activity("com.gh.compass",".CompassActivity");
+    	try{
+    		if(BaseAppium.id(nextButtonId) != null){
+        		BaseAppium.id(nextButtonId).click();
+        	}
+    	}catch(Exception e){
+    		
+    	}
+    	//"前方"两个字存在则打开成功
+    	if(BaseAppium.xpath(frontText).isDisplayed()){
+    		Assert.assertEquals(1, 1, "打开电子罗盘失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开计算器
+    @Test
+    public void openCalculator() {
+    	Activity activity = new Activity("com.android.calculator2",".Calculator");
+    	//c按钮存在则打开成功
+    	if(BaseAppium.id(cButtonId).isDisplayed()){
+    		Assert.assertEquals(1, 1, "打开计算器失败");
+    	}
+    	BaseAppium.back();
+    }
+    @BeforeTest
+    public void beforeTest() throws MalformedURLException {
+    	androidDriver = BaseAppium.init("com.gh.staraccess", ".StarActivity"); 
+
+  	    ScreenshotListener.driver = androidDriver;
+    }
+
+    @AfterTest
+    public void afterTest() {
+    }
+
+}

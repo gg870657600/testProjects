@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="2" name="Failed suite [TestSuite]" parallel="classes">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="calendar(failed)" parallel="classes">
+    <classes>
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="Newschedule"/>
+          <include name="openCalendar"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+    </classes>
+  </test> <!-- calendar(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

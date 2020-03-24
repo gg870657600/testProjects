@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="notepad"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="92.171">
+  <properties />
+  
+  
+            <testcase name="createHandwritingNote" time="21.599" classname="notepad.NotepadTest" />
+                <testcase name="createPictureNote" time="27.587" classname="notepad.NotepadTest" />
+                <testcase name="createRecordingNote" time="23.086" classname="notepad.NotepadTest" />
+                <testcase name="createTextNote" time="19.899" classname="notepad.NotepadTest" />
+      
+</testsuite>

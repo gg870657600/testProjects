@@ -1,0 +1,10 @@
+eclipse.m2.defaultRuntime=EMBEDDED
+eclipse.m2.downloadSources=true
+eclipse.m2.globalSettingsFile=D\:\\apache-maven-3.3.9\\conf\\settings.xml
+eclipse.m2.runtimes=apache-maven-3.3.9
+eclipse.m2.runtimesNodes/apache-maven-3.3.9/location=D\:\\apache-maven-3.3.9
+eclipse.m2.runtimesNodes/apache-maven-3.3.9/type=EXTERNAL
+eclipse.m2.updateIndexes=true
+eclipse.m2.updateProjects=true
+eclipse.m2.userSettingsFile=D\:\\apache-maven-3.3.9\\conf\\settings.xml
+eclipse.preferences.version=1

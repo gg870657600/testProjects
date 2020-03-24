@@ -1,0 +1,34 @@
+package mms;
+
+import java.net.MalformedURLException;
+
+import io.appium.java_client.android.AndroidDriver;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import Util.BaseAppium;
+
+public class MmsTest {
+	public static AndroidDriver androidDriver;
+	public static String newMmsButtonId = "com.android.mms:id/action_compose_new";
+	public static String recipientId = "com.android.mms:id/recipients_editor";
+	public static String inputBoxId = "com.android.mms:id/embedded_text_editor";
+	//信息发送失败有一个感叹号标识
+	public static String smsSendFailId = "com.android.mms:id/delivered_indicator";
+	public static String smsSendButtonId = "com.android.mms:id/send_button_sms";
+    @Test
+    public void f() {
+    }
+    @BeforeTest
+    public void beforeTest() throws MalformedURLException {
+    	androidDriver = BaseAppium.init("com.android.mms", ".ui.ConversationList");
+    }
+
+    @AfterTest
+    public void afterTest() {
+    	
+    }
+
+}

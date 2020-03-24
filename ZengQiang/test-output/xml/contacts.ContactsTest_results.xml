@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contacts"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="58.464">
+  <properties />
+  
+  
+            <testcase name="deleteContacts" time="14.309" classname="contacts.ContactsTest" />
+                <testcase name="editContacts" time="21.353" classname="contacts.ContactsTest" />
+                <testcase name="addContacts" time="22.802" classname="contacts.ContactsTest" />
+      
+</testsuite>

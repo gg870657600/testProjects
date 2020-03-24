@@ -1,0 +1,72 @@
+package ustar;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+
+import io.appium.java_client.android.AndroidDriver;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.BaseAppium;
+import util.ScreenshotListener;
+
+public class UstarTest {
+	AndroidDriver androidDriver;
+	String enterButtonId = "android:id/button1";
+	String switchButton = "android.widget.Switch";
+	String longitudeId = "com.unicore.unicorecdt:id/tv_lon";
+    @Test
+    public void ustarLocation() throws InterruptedException {
+    	  String longitude = BaseAppium.id(longitudeId).getText();
+		  System.out.println("定位:" + longitude);
+		  //循环判断经度数据是否有变化，有变化则定位成功
+		  int i = 0;
+		  while(true){
+			  String longitude2 = BaseAppium.id(longitudeId).getText();
+			  System.out.println("定位中....");
+			  if(!longitude.equals(longitude2)){
+				  System.out.println("定位成功:" + longitude2);
+				  Assert.assertEquals(1, 1, "定位成功");
+				  break;
+			  }
+			  //超过120还未定位则退出循环
+			  Thread.sleep(1000);
+			  i++;
+			  if(i == 120){
+				  System.out.println("超过120还未定位");
+				  Assert.assertEquals(1, 2, "定位超时");
+				  break;
+			  }
+		  }
+    }
+    
+    @Test
+    public void hotStartLocationTime(){
+    	
+    }
+    @BeforeTest
+    public void beforeTest() throws IOException, InterruptedException {
+    	androidDriver = BaseAppium.init("com.unicore.unicorecdt", ".MainActivity");
+    	ScreenshotListener.driver = androidDriver;
+    	//未打开定位按钮则打开
+    	try{
+    		if(BaseAppium.id(enterButtonId).isDisplayed()){
+        		BaseAppium.className(switchButton).click();
+        		BaseAppium.id(enterButtonId).click();
+        		BaseAppium.back();
+        		System.out.println("定位已开启");
+    		}
+    	}catch(Exception e){
+    		
+    	}
+    }
+
+    @AfterTest
+    public void afterTest() {
+    	androidDriver.quit();
+    }
+
+}

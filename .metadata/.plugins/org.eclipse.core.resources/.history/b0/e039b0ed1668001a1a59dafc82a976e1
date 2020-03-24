@@ -1,0 +1,18 @@
+<suite name="TestSuite" parallel="classes" thread-count="3" verbose="2">
+    <!-- 全局设置失败自动截图不起作用
+    <listeners>
+	        <listener class-name="util.ScreenshotListener" />
+	</listeners> 
+	-->         
+    <test name="calendar">           
+        <classes>                 
+            <class name="calendar.CalendarTest"/>             
+        </classes>
+        <listeners>
+		//reportNG监听
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    
+</suite>

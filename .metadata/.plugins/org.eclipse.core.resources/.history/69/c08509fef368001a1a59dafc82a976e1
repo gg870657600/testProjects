@@ -1,0 +1,80 @@
+package dataService;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.sql.Connection;
+import java.util.Map;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.connection.ConnectionState;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.BaseAppium;
+import util.ScreenshotListener;
+
+public class DataServiceTest {
+	AndroidDriver androidDriver;
+	String upstream = "//*[@text = '上行速率最大']";
+	String down = "//*[@text = '下行速率最大']";
+	String six = "//*[@text = '6']";
+	String moreButton = "//*[@content-desc='更多选项']";
+	String saveButton = "//*[@text = '保存']";
+	String dataSwitchButton = "//*[@text = '移动数据']";
+	String noNetwork = "//*[contains(@text , '无网络')]";
+	String enterButtonId = "android:id/button1";
+	String dataServiceOpenSuccess = "//*[@text = '数据开关打开成功']";
+    @Test
+    public void openDataService() throws IOException, InterruptedException {
+    	//判断数据业务是否打开,只能判断开关是否打开，不能确定数据是通的
+    	System.out.println( "数据业务是否开启:" + androidDriver.getConnection().isDataEnabled());
+    	
+    	
+    	//如果已经打开则先关闭后再设置上下行速率
+    	if(androidDriver.getConnection().isDataEnabled()){
+//    		androidDriver.setConnection(new ConnectionState(0b000));
+    		androidDriver.openNotifications();
+    		BaseAppium.xpath(dataSwitchButton).click();
+    	}
+    	//设置上下行
+    	BaseAppium.xpath(upstream).click();
+    	BaseAppium.xpath(six).click();
+    	BaseAppium.xpath(down).click();
+    	BaseAppium.xpath(six).click();
+    	BaseAppium.xpath(moreButton).click();
+    	BaseAppium.xpath(saveButton).click();
+    	
+    	//开启下拉状态栏移动数据
+        androidDriver.openNotifications();
+    	//打开数据业务，见ConnectionState源代码，参数0b代表二进制，100代表4
+//		androidDriver.setConnection(new ConnectionState(0b100));
+        BaseAppium.xpath(dataSwitchButton).click();
+        if(BaseAppium.xpath(noNetwork).isDisplayed()){
+        	BaseAppium.id(enterButtonId).click();
+        	System.out.println("没有网络");
+        }else{
+        	//数据开关打开成功弹窗出现
+        	if(BaseAppium.webDriverWait(By.xpath(dataServiceOpenSuccess), 90) != null){
+        		BaseAppium.id(enterButtonId).click();
+        		Assert.assertEquals(1, 1);
+        	}else{
+        		Assert.assertEquals(1, 0, "数据业务打开失败");
+        	}
+        }
+    }
+    @BeforeTest
+    public void beforeTest() throws IOException, InterruptedException {
+    	androidDriver = BaseAppium.init("com.leadcore.assistant", ".MATSPsSettings");
+    	ScreenshotListener.driver = androidDriver;
+    }
+
+    @AfterTest
+    public void afterTest() {
+    	androidDriver.quit();
+    }
+
+}
