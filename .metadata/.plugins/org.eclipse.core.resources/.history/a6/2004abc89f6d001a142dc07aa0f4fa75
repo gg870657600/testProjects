@@ -1,0 +1,117 @@
+<suite name="TestSuite" parallel="classes" thread-count="3" verbose="2">
+    <!-- 全局设置失败自动截图
+    <listeners>
+	        <listener class-name="util.ScreenshotListener" />
+	</listeners> 
+	-->         
+    <test name="calendar">           
+        <classes>                 
+            <class name="calendar.CalendarTest"/>             
+        </classes>
+        <listeners>
+		//reportNG监听
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="setting">           
+        <classes>                              
+            <class name="setting.SettingTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="camera">           
+        <classes>                              
+            <class name="camera.CameraTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+
+    <test name="fileExplorer">           
+        <classes>                              
+            <class name="fileExplorer.FileExplorerTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="notepad">           
+        <classes>                              
+            <class name="notepad.NotepadTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="contacts">           
+        <classes>                              
+            <class name="contacts.ContactsTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="dataService">           
+        <classes>                              
+            <class name="dataService.DataServiceTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="deskclock">           
+        <classes>                              
+            <class name="deskclock.DeskclockTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="dialer">           
+        <classes>                              
+            <class name="dialer.DialerTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="mms">           
+        <classes>                              
+            <class name="mms.MmsTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="otherApps">           
+        <classes>                              
+            <class name="otherApps.StartAppsTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+    <test name="others">           
+        <classes>                              
+            <class name="others.OthersTest"/>
+        </classes>
+        <listeners>
+	        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+    </test>
+</suite>

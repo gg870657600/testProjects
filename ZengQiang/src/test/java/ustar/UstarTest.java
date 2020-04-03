@@ -6,22 +6,26 @@ import java.net.MalformedURLException;
 import io.appium.java_client.android.AndroidDriver;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
-
+@Listeners({ScreenshotListener.class})
 public class UstarTest {
 	AndroidDriver androidDriver;
 	String enterButtonId = "android:id/button1";
 	String switchButton = "android.widget.Switch";
 	String longitudeId = "com.unicore.unicorecdt:id/tv_lon";
+	String rememberElement = "//*[@text = '记住我的选择']";
     @Test
     public void ustarLocation() throws InterruptedException {
     	  String longitude = BaseAppium.id(longitudeId).getText();
-		  System.out.println("定位:" + longitude);
+		  System.out.println("经度定位:" + longitude);
 		  //循环判断经度数据是否有变化，有变化则定位成功
 		  int i = 0;
 		  while(true){
@@ -43,10 +47,7 @@ public class UstarTest {
 		  }
     }
     
-    @Test
-    public void hotStartLocationTime(){
-    	
-    }
+    
     @BeforeTest
     public void beforeTest() throws IOException, InterruptedException {
     	androidDriver = BaseAppium.init("com.unicore.unicorecdt", ".MainActivity");

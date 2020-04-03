@@ -83,7 +83,7 @@ public class WebDriverEventListener implements AppiumWebDriverEventListener{
 		// TODO Auto-generated method stub
 		
 	}
-//只能监听findElement(By by)方法，还不能监听函数里面的，有点儿鸡肋(findElementByXpath等方法监听不了).暂时只能在每次初始化时检测一下弹窗
+//只能监听findElement(By by)方法，还不能监听函数里面的，有点儿鸡肋(findElementByXpath等方法监听不了).暂时只能在每次初始化时检测一下弹窗.显式等待也会监听
 	@Override
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
@@ -100,14 +100,13 @@ public class WebDriverEventListener implements AppiumWebDriverEventListener{
 //		BaseAppium au=new BaseAppium(driver);
 		if(BaseAppium.elementIsExist(BaseAppium.id("android:id/button1"))){
 			System.out.println("确定按钮  存在");
-			BaseAppium.id("//*[@text = '确定']").click();
+			BaseAppium.id("android:id/button1").click();
 		}
 	}
 
 	@Override
 	public void afterFindBy(By by, WebElement element, WebDriver driver) {
 		// TODO Auto-generated method stub
-
 		
 	}
 

@@ -38,6 +38,7 @@ public class ScreenshotListener extends TestListenerAdapter{
         catch(IOException e){
             e.printStackTrace();
         }
-        Reporter.log("<a href=" + screenShotName + " target=_blank>Failed Screen Shot</a>", true);
+//        Reporter.log("<a href=" + screenShotName + " target=_blank>Failed Screen Shot</a>", true);
+        Reporter.log("<失败截图路径 = " + screenShotName + " />", true);
     }
 }

@@ -1,0 +1,58 @@
+# Created on 2020-03-24T17:01:27.699
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2020-03-24T17:01:36.656
+Unexpected IOException: 8,1,dataService.DataServiceTest,openDataService(dataService.DataServiceTest),null,null,null,null,DataServiceTest.openDataService:51 NullPointer,java.lang.NullPointerException\000A\0009at dataService.DataServiceTest.openDataService(DataServiceTest.java:51)\000A
+
+
+# Created on 2020-03-24T17:01:36.657
+Unexpected IOException with stream: [TestNG] FAILED: "dataService" - dataService.DataServiceTest.openDataService() finished in 11578 ms
+[TestNG] java.lang.NullPointerException
+[TestNG] 	at dataService.DataServiceTest.openDataService(DataServiceTest.java:51)
+[TestNG] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[TestNG] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[TestNG] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[TestNG] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[TestNG] 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+[TestNG] 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+[TestNG] 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+[TestNG] 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+[TestNG] 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+[TestNG] 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+[TestNG] 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+[TestNG] 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+[TestNG] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[TestNG] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[TestNG] 	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2020-03-24T17:01:39.133
+Unexpected IOException with stream: <a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>
+
+
+# Created on 2020-03-24T17:01:41.605
+Unexpected IOException with stream: <a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>
+
+
+# Created on 2020-03-24T17:01:41.606
+Unexpected IOException: 5,1,dataService.DataServiceTest,openWebpage(dataService.DataServiceTest),dataService.DataServiceTest,null,null
+
+
+# Created on 2020-03-24T17:01:41.606
+Unexpected IOException with stream: [TestNG] INVOKING: "dataService" - dataService.DataServiceTest.openWebpage()
+
+
+# Created on 2020-03-24T17:01:42.198
+Unexpected IOException with stream: Starting: Intent { act=android.intent.action.VIEW dat=http://192.168.0.163 }
+
+
+# Created on 2020-03-24T17:01:42.198
+Unexpected IOException with stream: 
+
+

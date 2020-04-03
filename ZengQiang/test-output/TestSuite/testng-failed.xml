@@ -1,20 +1,520 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" verbose="2" name="Failed suite [TestSuite]" parallel="classes">
+<suite verbose="2" name="Failed suite [TestSuite]" parallel="classes">
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="util.ScreenshotListener"/>
   </listeners>
-  <test name="calendar(failed)" parallel="classes">
+  <test name="setting(failed)" parallel="classes">
     <classes>
       <class name="calendar.CalendarTest">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="Newschedule"/>
-          <include name="openCalendar"/>
         </methods>
       </class> <!-- calendar.CalendarTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="location"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
     </classes>
-  </test> <!-- calendar(failed) -->
+  </test> <!-- setting(failed) -->
+  <test name="dialer(failed)" parallel="classes">
+    <classes>
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="addNumToContact"/>
+          <include name="handDialing"/>
+          <include name="contactDialing"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
+    </classes>
+  </test> <!-- dialer(failed) -->
+  <test name="dataService(failed)" parallel="classes">
+    <classes>
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="openDataService"/>
+          <include name="openWebpage"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
+    </classes>
+  </test> <!-- dataService(failed) -->
+  <test name="ustar(failed)" parallel="classes">
+    <classes>
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="ustarLocation"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
+    </classes>
+  </test> <!-- ustar(failed) -->
+  <test name="others(failed)" parallel="classes">
+    <classes>
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="fastDialer"/>
+          <include name="hotStartLocationTime"/>
+          <include name="beforeTest"/>
+          <include name="airplaneToNormalMode"/>
+          <include name="afterTest"/>
+          <include name="sosToNormalMode"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
+    </classes>
+  </test> <!-- others(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -21,6 +21,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ElementListener;
 import util.ScreenshotListener;
@@ -64,7 +66,7 @@ public class SettingTest {
 		  }
 		  Thread.sleep(5000);
 		  String longitude = BaseAppium.id(longitudeId).getText();
-		  System.out.println("定位:" + longitude);
+		  System.out.println("经度定位:" + longitude);
 		  //循环判断经纬度数据是否有变化，有变化则定位成功
 		  int i = 0;
 		  while(i < 120){
@@ -79,7 +81,7 @@ public class SettingTest {
 			  Thread.sleep(1000);
 			  i++;
 			  if(i == 120){
-				  System.out.println("超过120还未定位");
+				  System.out.println("超过120s还未定位");
 				  Assert.assertEquals(1, 2, "定位超时");
 				  break;
 			  }

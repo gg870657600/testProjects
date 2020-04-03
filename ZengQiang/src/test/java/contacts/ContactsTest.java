@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
 @Listeners({ScreenshotListener.class})
@@ -99,22 +101,7 @@ public class ContactsTest {
 //    		System.out.println("找不到元素");
     	}
     }
-//    @BeforeMethod
-//    public void beforeMethod() {
-//    	try{
-//    		BaseAppium.keepClickElement(BaseAppium.id("android:id/app_ops_checkbox"),BaseAppium.id("android:id/button1"));
-//    	}catch (Exception e) {
-////    		System.out.println("找不到元素");
-//    	}
-//    }
-//    @AfterMethod
-//    public void afterMethod() {
-//    	try{
-//    		BaseAppium.keepClickElement(BaseAppium.id("android:id/app_ops_checkbox"),BaseAppium.id("android:id/button1"));
-//    	}catch (Exception e) {
-////    		System.out.println("找不到元素");
-//    	}
-//    }
+
     @AfterTest
     public void afterTest() {
     	

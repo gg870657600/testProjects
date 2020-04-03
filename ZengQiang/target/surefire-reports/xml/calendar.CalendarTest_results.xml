@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="calendar"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="42.058">
+  <properties />
+  
+  
+            <testcase name="openCalendar" time="2.137" classname="calendar.CalendarTest" />
+                <testcase name="newSchedule" time="27.691" classname="calendar.CalendarTest" />
+                <testcase name="deleteSchedule" time="12.230" classname="calendar.CalendarTest" />
+      
+</testsuite>

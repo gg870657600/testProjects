@@ -4,13 +4,13 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="92.171">
+           time="86.299">
   <properties />
   
   
-            <testcase name="createHandwritingNote" time="21.599" classname="notepad.NotepadTest" />
-                <testcase name="createPictureNote" time="27.587" classname="notepad.NotepadTest" />
-                <testcase name="createRecordingNote" time="23.086" classname="notepad.NotepadTest" />
-                <testcase name="createTextNote" time="19.899" classname="notepad.NotepadTest" />
+            <testcase name="createPictureNote" time="28.019" classname="notepad.NotepadTest" />
+                <testcase name="createHandwritingNote" time="15.763" classname="notepad.NotepadTest" />
+                <testcase name="createTextNote" time="20.001" classname="notepad.NotepadTest" />
+                <testcase name="createRecordingNote" time="22.516" classname="notepad.NotepadTest" />
       
 </testsuite>

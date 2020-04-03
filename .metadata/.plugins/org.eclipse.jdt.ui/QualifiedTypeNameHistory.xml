@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.events.WebDriverEventListener"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.events.EventFiringWebDriver"/>
-<fullyQualifiedTypeName name="bsh.BshClassManager.Listener"/>
-<fullyQualifiedTypeName name="io.appium.java_client.events.api.Listener"/>
 <fullyQualifiedTypeName name="io.appium.java_client.events.api.general.AppiumWebDriverEventListener"/>
 <fullyQualifiedTypeName name="io.appium.java_client.events.api.general.WindowEventListener"/>
 <fullyQualifiedTypeName name="java.sql.Time"/>
@@ -33,16 +29,12 @@
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Row"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Cell"/>
 <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="util.ExcelDataVO"/>
 <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
 <fullyQualifiedTypeName name="util.ExcelWriter"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.testng.Reporter"/>
-<fullyQualifiedTypeName name="io.appium.java_client.android.Activity"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="org.apache.oro.text.regex.Pattern"/>
@@ -53,11 +45,19 @@
 <fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
 <fullyQualifiedTypeName name="io.appium.java_client.touch.offset.ElementOption"/>
 <fullyQualifiedTypeName name="java.time.Duration"/>
-<fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="java.util.Base64"/>
 <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
 <fullyQualifiedTypeName name="io.appium.java_client.imagecomparison.SimilarityMatchingOptions"/>
+<fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
+<fullyQualifiedTypeName name="io.appium.java_client.android.Activity"/>
+<fullyQualifiedTypeName name="org.testng.TestListenerAdapter"/>
+<fullyQualifiedTypeName name="org.testng.ITestResult"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="util.AssertListener"/>
+<fullyQualifiedTypeName name="util.Assertion"/>
 </qualifiedTypeNameHistroy>

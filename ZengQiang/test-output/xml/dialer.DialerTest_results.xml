@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="dialer"
-           tests="2"
-           failures="1"
+           tests="3"
+           failures="2"
            errors="0"
            skipped="0"
-           time="63.725">
+           time="104.889">
   <properties />
-            <testcase name="handDialing" time="63.724" classname="dialer.DialerTest">
-                <failure type="org.openqa.selenium.TimeoutException"
-                  message="Expected condition failed: waiting for element to be clickable: By.id: com.android.dialer:id/elapsedTime (tried for 30 second(s) with 500 milliseconds interval)"
+            <testcase name="contactDialing" time="76.900" classname="dialer.DialerTest">
+                <failure type="java.lang.AssertionError"
+                  message="The following asserts failed:
+	未接通或中途被挂断 expected [0] but found [1]"
               >
-<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: com.android.dialer:id/elapsedTime (tried for 30 second(s) with 500 milliseconds interval)
-  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-  dialer.DialerTest.handDialing(DialerTest.java:99)
+<![CDATA[java.lang.AssertionError: The following asserts failed:
+	未接通或中途被挂断 expected [0] but found [1]
+  org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+  dialer.DialerTest.contactDialing(DialerTest.java:136)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -27,46 +28,16 @@
   java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
   java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
   java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .DialtactsActivity, appPackage: com.android.dialer, automationName: Appium, databaseEnabled: false, desired: {appActivity: .DialtactsActivity, appPackage: com.android.dialer, automationName: Appium, deviceName: 0123456789ABCDEF011, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF04, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF04, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 974b6a1b-c36c-4f00-a944-eb22db87f71a
-*** Element info: {Using=id, value=com.android.dialer:id/elapsedTime}
-  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-  java.lang.reflect.Constructor.newInstance(Unknown Source)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-  org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-  io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-  io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-  io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-  org.openqa.selenium.By$ById.findElement(By.java:188)
-  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-  io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-  io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-  io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-  org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-  org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-  dialer.DialerTest.handDialing(DialerTest.java:99)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="handDialing" time="5.055" classname="dialer.DialerTest">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  dialer.DialerTest.handDialing(DialerTest.java:77)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -86,6 +57,6 @@ Session ID: 974b6a1b-c36c-4f00-a944-eb22db87f71a
           </testcase>
   
   
-            <testcase name="contactDialing" time="0.001" classname="dialer.DialerTest" />
+            <testcase name="addNumToContact" time="22.934" classname="dialer.DialerTest" />
       
 </testsuite>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 10 13:44:22 CST 2020</td>
+<td>Started on:</td><td>Wed Apr 01 13:17:36 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>162 seconds (162670 ms)</td>
+<tr><td>Total time:</td><td>186 seconds (186904 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='setting.SettingTest.location()'><b>location</b><br>Test class: setting.SettingTest</td>
+<td title='setting.SettingTest.location()'><b>location</b><br>Test class: setting.SettingTest<br/>
+<a href="#Output-1724513346" onClick='toggleBox("Output-1724513346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1724513346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1724513346">
+<失败截图路径 = E:\testProjects\ZengQiang\screenshots1\location.png /><br/>
+<失败截图路径 = E:\testProjects\ZengQiang\screenshots1\location.png /><br/>
+</div>
+</td>
 <td><div><pre>java.lang.AssertionError: 定位超时 expected [2] but found [1]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:372)
-	at setting.SettingTest.location(SettingTest.java:80)
+	at setting.SettingTest.location(SettingTest.java:85)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -95,13 +103,13 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-</pre></div><a href='#' onClick='toggleBox("stack-trace386707054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace386707054'><pre>java.lang.AssertionError: 定位超时 expected [2] but found [1]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1724513346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1724513346'><pre>java.lang.AssertionError: 定位超时 expected [2] but found [1]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:372)
-	at setting.SettingTest.location(SettingTest.java:80)
+	at setting.SettingTest.location(SettingTest.java:85)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -116,8 +124,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>148</td>
-<td>setting.SettingTest@60285225</td></tr>
+<td>152</td>
+<td>setting.SettingTest@27a5f880</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,0 +1,99 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 47, Failures: 20, Errors: 0, Skipped: 11, Time elapsed: 1,005.002 s <<< FAILURE! - in TestSuite
+location(setting.SettingTest)  Time elapsed: 119.381 s  <<< FAILURE!
+java.lang.NullPointerException
+	at setting.SettingTest.location(SettingTest.java:71)
+
+beforeTest(camera.CameraTest)  Time elapsed: 164.091 s  <<< FAILURE!
+java.lang.NullPointerException
+	at camera.CameraTest.countPhoto(CameraTest.java:158)
+	at camera.CameraTest.beforeTest(CameraTest.java:110)
+
+createHandwritingNote(notepad.NotepadTest)  Time elapsed: 7.675 s  <<< FAILURE!
+java.lang.NullPointerException
+	at notepad.NotepadTest.createHandwritingNote(NotepadTest.java:98)
+
+createPictureNote(notepad.NotepadTest)  Time elapsed: 7.553 s  <<< FAILURE!
+java.lang.NullPointerException
+	at notepad.NotepadTest.createPictureNote(NotepadTest.java:73)
+
+createRecordingNote(notepad.NotepadTest)  Time elapsed: 7.176 s  <<< FAILURE!
+java.lang.NullPointerException
+	at notepad.NotepadTest.createRecordingNote(NotepadTest.java:121)
+
+createTextNote(notepad.NotepadTest)  Time elapsed: 7.713 s  <<< FAILURE!
+java.lang.NullPointerException
+	at notepad.NotepadTest.createTextNote(NotepadTest.java:52)
+
+addContacts(contacts.ContactsTest)  Time elapsed: 7.597 s  <<< FAILURE!
+java.lang.NullPointerException
+	at contacts.ContactsTest.addContacts(ContactsTest.java:35)
+
+editContacts(contacts.ContactsTest)  Time elapsed: 7.551 s  <<< FAILURE!
+java.lang.NullPointerException
+	at contacts.ContactsTest.editContacts(ContactsTest.java:54)
+
+deleteContacts(contacts.ContactsTest)  Time elapsed: 7.332 s  <<< FAILURE!
+java.lang.NullPointerException
+	at contacts.ContactsTest.deleteContacts(ContactsTest.java:75)
+
+openDataService(dataService.DataServiceTest)  Time elapsed: 10.92 s  <<< FAILURE!
+java.lang.NullPointerException
+	at dataService.DataServiceTest.openDataService(DataServiceTest.java:51)
+
+openWebpage(dataService.DataServiceTest)  Time elapsed: 6.552 s  <<< FAILURE!
+java.lang.AssertionError: 打开网页失败 expected [0] but found [1]
+	at dataService.DataServiceTest.openWebpage(DataServiceTest.java:88)
+
+beforeTest(deskclock.DeskclockTest)  Time elapsed: 38.756 s  <<< FAILURE!
+java.lang.NullPointerException
+	at deskclock.DeskclockTest.beforeTest(DeskclockTest.java:65)
+
+addNumToContact(dialer.DialerTest)  Time elapsed: 12.184 s  <<< FAILURE!
+java.lang.NullPointerException
+	at dialer.DialerTest.addNumToContact(DialerTest.java:62)
+
+handDialing(dialer.DialerTest)  Time elapsed: 48.354 s  <<< FAILURE!
+java.lang.AssertionError: 没有网络 expected [0] but found [1]
+	at dialer.DialerTest.handDialing(DialerTest.java:95)
+
+afterTest(dialer.DialerTest)  Time elapsed: 8.159 s  <<< FAILURE!
+java.lang.NullPointerException
+	at dialer.DialerTest.afterTest(DialerTest.java:150)
+
+sendSms(mms.MmsTest)  Time elapsed: 29.408 s  <<< FAILURE!
+java.lang.AssertionError: 发送短息失败 expected [2] but found [1]
+	at mms.MmsTest.sendSms(MmsTest.java:64)
+
+openWps(otherApps.StartAppTest)  Time elapsed: 1.045 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Cannot start the 'cn.wps.moffice_eng' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start 'cn.wps.moffice.documentmanager.DocumentManager' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+	at otherApps.StartAppTest.openWps(StartAppTest.java:147)
+
+openInputmethod(otherApps.StartAppTest)  Time elapsed: 0.983 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.iflytek.inputmethod' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start '.wizard.WizardActivity' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+	at otherApps.StartAppTest.openInputmethod(StartAppTest.java:167)
+
+fastDialer(others.OthersTest)  Time elapsed: 4.976 s  <<< FAILURE!
+java.lang.AssertionError: 没有网络 expected [0] but found [1]
+	at others.OthersTest.fastDialer(OthersTest.java:180)
+
+fastDialer(others.OthersTest)  Time elapsed: 4.836 s  <<< FAILURE!
+java.lang.AssertionError: 没有网络 expected [0] but found [1]
+	at others.OthersTest.fastDialer(OthersTest.java:180)
+

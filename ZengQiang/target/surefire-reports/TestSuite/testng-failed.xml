@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [TestSuite]" parallel="classes">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" verbose="5" name="setting(failed)" parallel="classes">
+    <classes>
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="location"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+    </classes>
+  </test> <!-- setting(failed) -->
+  <test thread-count="5" verbose="5" name="camera(failed)" parallel="classes">
+    <classes>
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="rearCamera"/>
+          <include name="afterTest"/>
+          <include name="frontCamera"/>
+          <include name="rearVideo"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="openCamera"/>
+          <include name="frontVideo"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+    </classes>
+  </test> <!-- camera(failed) -->
+  <test thread-count="5" verbose="5" name="notepad(failed)" parallel="classes">
+    <classes>
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="createTextNote"/>
+          <include name="beforeMethod"/>
+          <include name="createPictureNote"/>
+          <include name="beforeTest"/>
+          <include name="createHandwritingNote"/>
+          <include name="afterMethod"/>
+          <include name="createRecordingNote"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+    </classes>
+  </test> <!-- notepad(failed) -->
+  <test thread-count="5" verbose="5" name="contacts(failed)" parallel="classes">
+    <classes>
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="deleteContacts"/>
+          <include name="addContacts"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="editContacts"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+    </classes>
+  </test> <!-- contacts(failed) -->
+  <test thread-count="5" verbose="5" name="dataService(failed)" parallel="classes">
+    <classes>
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="openDataService"/>
+          <include name="openWebpage"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+    </classes>
+  </test> <!-- dataService(failed) -->
+  <test thread-count="5" verbose="5" name="deskclock(failed)" parallel="classes">
+    <classes>
+      <class name="deskclock.DeskclockTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="alarmClock"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- deskclock.DeskclockTest -->
+    </classes>
+  </test> <!-- deskclock(failed) -->
+  <test thread-count="5" verbose="5" name="dialer(failed)" parallel="classes">
+    <classes>
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="addNumToContact"/>
+          <include name="handDialing"/>
+          <include name="contactDialing"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+    </classes>
+  </test> <!-- dialer(failed) -->
+  <test thread-count="5" verbose="5" name="mms(failed)" parallel="classes">
+    <classes>
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="sendSms"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+    </classes>
+  </test> <!-- mms(failed) -->
+  <test thread-count="5" verbose="5" name="otherApps(failed)" parallel="classes">
+    <classes>
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="openWps"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="openInputmethod"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+    </classes>
+  </test> <!-- otherApps(failed) -->
+  <test thread-count="5" verbose="5" name="others(failed)" parallel="classes">
+    <classes>
+      <class name="others.OthersTest">
+        <methods>
+          <include name="fastDialer"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+    </classes>
+  </test> <!-- others(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

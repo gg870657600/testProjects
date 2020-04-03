@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="simpleMode"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="17.679">
+  <properties />
+  
+  
+            <testcase name="simpleModeOpenApp" time="16.009" classname="simpleMode.SimpleModeTest" />
+                <testcase name="openSimpleMode" time="1.670" classname="simpleMode.SimpleModeTest" />
+      
+</testsuite>

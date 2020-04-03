@@ -1,13 +1,16 @@
 package util;
 
+
 import java.util.ArrayList;
 import java.util.List;
-
+ 
 import org.testng.Assert;
-//TestNG测试框架中断言失败是程序继续执行、只负责收集失败信息,重写断言方法
+import org.testng.annotations.Listeners;
+ 
 public class Assertion {
-	public static boolean flag = true;
-    
+     
+    public static boolean flag = true;
+     
     public static List<Error> errors = new ArrayList<Error>();
      
     public static void verifyEquals(Object actual, Object expected){
@@ -27,4 +30,33 @@ public class Assertion {
             flag = false;
         }
     }
+    
+    public static void verifyNulls(boolean actual, boolean expected){
+    	
+    	try{
+    		
+    		Assert.assertEquals(actual, expected);
+    		
+    	}catch(Error e){
+    		
+    		errors.add(e);
+            flag = false;
+    	}
+    }
+ 
+    public static void verifyNulls(boolean actual, boolean expected , String msg){
+    	
+    	try{
+    		
+    		Assert.assertEquals(actual, expected, msg);
+    		
+    	}catch(Error e){
+    		
+    		errors.add(e);
+            flag = false;
+    	}
+    }
+    
+    //其他需要的断言方法都可以这样写进来.....
+
 }

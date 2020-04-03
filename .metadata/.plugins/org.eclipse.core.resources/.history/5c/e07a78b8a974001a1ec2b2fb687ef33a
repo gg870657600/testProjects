@@ -1,0 +1,232 @@
+package otherApps;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.AssertListener;
+import util.Assertion;
+import util.BaseAppium;
+import util.ScreenshotListener;
+@Listeners({ScreenshotListener.class})
+public class StartAppTest {
+	AndroidDriver androidDriver;
+	//"下次再校"弹窗
+	String nextButtonId = "android:id/button2";
+	//对星罗盘图片id
+	String compassImgId = "com.gh.staraccess:id/star_pan";
+	String frontText = "//*[contains(@text, '前方')]";
+	String cButtonId = "com.android.calculator2:id/clear";
+	String editBoxId = "com.android.browser:id/url";
+	String outButtonId = "android:id/button1";
+	//录制按钮
+	String startButtonId = "com.android.soundrecorder:id/start";
+	String musicianButtonId = "com.android.music:id/artisttab";
+	//同意按钮
+	String agreeButtonId = "cn.wps.moffice_eng:id/dialog_button_positive";
+	//浏览目录
+	String catalogText= "cn.wps.moffice_eng:id/new_document_item_textview";
+	//勾选讯飞输入法
+	String inputText = "com.iflytek.inputmethod:id/text_step1";
+	//天通一号卫星集群系统
+	String pptTextId = "com.neolink.pttphone:id/actionbar_center_tv";
+	String pptSettingButtonId = "com.neolink.pttphone:id/id_tab_settings";
+	String pptLogoutButtonId = "com.neolink.pttphone:id/settings_logout_btn";
+	//输入密码框
+	String inputPasswordBoxId = "com.raycom.mctools:id/dialog_edit";
+	String toolsFolder = "//*[@content-desc='文件夹：工具']";
+	String musicAppName = "//*[@text='音乐']";
+	String photoText = "//*[@text='照片']";
+	//打开对星助手
+    @Test
+    public void openOppositeStar() {
+    	try{
+    		if(BaseAppium.id(nextButtonId) != null){
+        		BaseAppium.id(nextButtonId).click();
+        	}
+    	}catch(Exception e){
+    		
+    	}
+    	//对星罗盘存在则打开成功
+    	if(BaseAppium.id(compassImgId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开对星助手失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开电子罗盘
+    @Test(priority = 1)
+    public void openCompass() {
+    	Activity activity = new Activity("com.gh.compass",".CompassActivity");
+    	androidDriver.startActivity(activity);
+    	try{
+    		if(BaseAppium.id(nextButtonId) != null){
+        		BaseAppium.id(nextButtonId).click();
+        	}
+    	}catch(Exception e){
+    		
+    	}
+    	//"前方"两个字存在则打开成功
+    	if(BaseAppium.xpath(frontText).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开电子罗盘失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开计算器
+    @Test(priority = 2)
+    public void openCalculator() {
+    	Activity activity = new Activity("com.android.calculator2",".Calculator");
+    	androidDriver.startActivity(activity);
+    	//c按钮存在则打开成功
+    	if(BaseAppium.id(cButtonId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开计算器失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开浏览器
+    @Test(priority = 3)
+    public void openBrowser() {
+    	Activity activity = new Activity("com.android.browser",".BrowserActivity");
+    	androidDriver.startActivity(activity);
+    	//url输入框存在则打开成功
+    	if(BaseAppium.id(editBoxId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开浏览器失败");
+    	}
+    	BaseAppium.back();
+    	BaseAppium.id(outButtonId).click();
+    }
+    //打开录音机
+    @Test(priority = 4)
+    public void openSoundRecorder() {
+    	Activity activity = new Activity("com.android.soundrecorder",".SoundRecorder");
+    	androidDriver.startActivity(activity);
+    	//录制存在则打开成功
+    	if(BaseAppium.id(startButtonId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开录音机失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开音乐
+    @Test(priority = 5)
+    public void openMusic() {
+    	//主activity打开没有任何元素？？？？,这里直接按home键，进入工具手动打开
+    	androidDriver.pressKey(new KeyEvent(AndroidKey.HOME));
+    	BaseAppium.xpath(toolsFolder).click();
+    	if(BaseAppium.xpath(musicAppName) == null){
+    		BaseAppium.slideLeft();
+    	}
+    	BaseAppium.xpath(musicAppName).click();
+    	//音乐人按钮存在则打开成功
+    	if(BaseAppium.id(musicianButtonId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开音乐失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开WPS
+    @Test(priority = 6)
+    public void openWps() {
+    	Activity activity = new Activity("cn.wps.moffice_eng","cn.wps.moffice.documentmanager.DocumentManager");
+    	androidDriver.startActivity(activity);
+    	try{
+    		if(BaseAppium.id(agreeButtonId) != null){
+        		BaseAppium.id(agreeButtonId).click();
+        	}
+    	}catch(Exception e){
+    		
+    	}
+    	//浏览目录存在则打开成功
+    	if(BaseAppium.id(catalogText).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开wps失败");
+    	}
+    	BaseAppium.back();
+    }
+    //打开输入法
+    @Test(priority = 7)
+    public void openInputmethod() {
+    	Activity activity = new Activity("com.iflytek.inputmethod",".wizard.WizardActivity");
+    	androidDriver.startActivity(activity);
+    	//勾选输入法存在则打开成功
+    	if(BaseAppium.id(inputText).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开输入法失败");
+    	}
+    	BaseAppium.back();
+    	BaseAppium.back();
+    }
+    //打开卫星集群
+    @Test(priority = 8)
+    public void openPttphone() throws InterruptedException {
+    	Activity activity = new Activity("com.neolink.pttphone",".phone.ui.PttPhoneMainActivity");
+    	androidDriver.startActivity(activity);
+    	//勾选输入法存在则打开成功
+    	if(BaseAppium.id(pptTextId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开卫星集群失败");
+    	}
+    	BaseAppium.id(pptSettingButtonId).click();
+    	BaseAppium.id(pptLogoutButtonId).click();
+    	Thread.sleep(2000);
+    }
+    //打开安全代理
+    @Test(priority = 9)
+    public void openMctools() throws InterruptedException {
+    	Activity activity = new Activity("com.raycom.mctools",".ui.MainActivity");
+    	androidDriver.startActivity(activity);
+    	//请输入密码框存在则打开成功
+    	if(BaseAppium.id(inputPasswordBoxId).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开安全代理失败");
+    	}
+    	Thread.sleep(2000);
+    }
+    //打开相册
+    @Test(priority = 10)
+    public void openGaller() throws InterruptedException {
+    	Activity activity = new Activity("com.android.gallery3d",".app.GalleryActivity");
+    	androidDriver.startActivity(activity);
+    	//请输入密码框存在则打开成功
+    	if(BaseAppium.xpath(photoText).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开相册失败");
+    	}
+    	Thread.sleep(2000);
+    }
+    @BeforeTest
+    public void beforeTest() throws IOException, InterruptedException {
+    	androidDriver = BaseAppium.init("com.gh.staraccess", ".StarActivity"); 
+  	    ScreenshotListener.driver = androidDriver;
+    }
+
+    @AfterTest
+    public void afterTest() {
+    	androidDriver.quit();
+    }
+
+}

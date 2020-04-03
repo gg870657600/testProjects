@@ -18,6 +18,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
 @Listeners({ScreenshotListener.class})
@@ -68,82 +70,82 @@ public class NotepadTest {
     	Assert.assertEquals(actual, expected, "创建文本笔记失败");
     	Thread.sleep(2000);   	
     }
-//    @Test
-//    public void createPictureNote() throws InterruptedException {
-//    	BaseAppium.id(addButtonId).click();
-//    	BaseAppium.xpath(pictureNote).click();
-//    	BaseAppium.id(pictureTitleEditId).sendKeys("图片笔记");
-//    	BaseAppium.id(pictureContextEditId).sendKeys("图片笔记内容");
-//    	BaseAppium.id(pictureAddButtonId).click();
-//    	BaseAppium.id(takePhotoButtonId).click();
-//    	BaseAppium.id(shutterButton).click();
-//    	BaseAppium.id(enterButtonId).click();
-//    	BaseAppium.id(saveButtonId).click();
-//    	
-//    	Thread.sleep(2000);
-//    	//检查主页是否有"图片笔记"关键字
-//    	String expected = "图片笔记";
-//    	String actual = "";
-//    	try{
-//    		actual = BaseAppium.xpath(pictureNote).getText();
-//    	}catch (Exception e) {
-//    		System.out.println("找不到元素");
-//    	}
-//    	System.out.println("记事本主页有:"+ actual);
-//    	Assert.assertEquals(actual, expected, "创建图片笔记失败");
-//    	Thread.sleep(2000);
-//    }
-//    @Test
-//    public void createHandwritingNote() throws InterruptedException {
-//    	BaseAppium.id(addButtonId).click();
-//    	BaseAppium.xpath(handwritingNote).click();
-//    	BaseAppium.id(handTitleEditId).sendKeys("手写笔记");
-////    	BaseAppium.id(handContextEditId).sendKeys("手写笔记内容");
-//    	BaseAppium.slideLeft();
-//    	Thread.sleep(2000);
-//    	BaseAppium.id(saveButtonId).click();
-//    	
-//    	Thread.sleep(2000);
-//    	//检查主页是否有"手写笔记"关键字
-//    	String expected = "手写笔记";
-//    	String actual = "";
-//    	try{
-//    		actual = BaseAppium.xpath(handwritingNote).getText();
-//    	}catch (Exception e) {
-//    		System.out.println("找不到元素");
-//    	}
-//    	System.out.println("记事本主页有:"+ actual);
-//    	Assert.assertEquals(actual, expected, "创建手写笔记失败");
-//    	Thread.sleep(2000);
-//    }
-//    @Test
-//    public void createRecordingNote() throws InterruptedException {
-//    	BaseAppium.id(addButtonId).click();
-//    	BaseAppium.xpath(recordingNote).click();
-//    	BaseAppium.id(recordTitleEditId).sendKeys("录音笔记");
-//    	BaseAppium.id(recordContextEditId).sendKeys("录音笔记内容");
-//    	//长按和滑动都适用
-//    	new TouchAction(androidDriver)
-//    		.press(PointOption.point(370,1130))
-//    		.waitAction(WaitOptions.waitOptions(Duration.ofMillis(5000)))  
-//    		.moveTo(PointOption.point(370,1130))
-//    		.release()
-//    		.perform();
-//    	BaseAppium.id(saveButtonId).click();
-//    	
-//    	Thread.sleep(2000);
-//    	//检查主页是否有"录音笔记"关键字
-//    	String expected = "录音笔记";
-//    	String actual = "";
-//    	try{
-//    		actual = BaseAppium.xpath(recordingNote).getText();
-//    	}catch (Exception e) {
-//    		System.out.println("找不到元素");
-//    	}
-//    	System.out.println("记事本主页有:"+ actual);
-//    	Assert.assertEquals(actual, expected, "创建录音笔记失败");
-//    	Thread.sleep(2000);
-//    }
+    @Test
+    public void createPictureNote() throws InterruptedException {
+    	BaseAppium.id(addButtonId).click();
+    	BaseAppium.xpath(pictureNote).click();
+    	BaseAppium.id(pictureTitleEditId).sendKeys("图片笔记");
+    	BaseAppium.id(pictureContextEditId).sendKeys("图片笔记内容");
+    	BaseAppium.id(pictureAddButtonId).click();
+    	BaseAppium.id(takePhotoButtonId).click();
+    	BaseAppium.id(shutterButton).click();
+    	BaseAppium.id(enterButtonId).click();
+    	BaseAppium.id(saveButtonId).click();
+    	
+    	Thread.sleep(2000);
+    	//检查主页是否有"图片笔记"关键字
+    	String expected = "图片笔记";
+    	String actual = "";
+    	try{
+    		actual = BaseAppium.xpath(pictureNote).getText();
+    	}catch (Exception e) {
+    		System.out.println("找不到元素");
+    	}
+    	System.out.println("记事本主页有:"+ actual);
+    	Assert.assertEquals(actual, expected, "创建图片笔记失败");
+    	Thread.sleep(2000);
+    }
+    @Test
+    public void createHandwritingNote() throws InterruptedException {
+    	BaseAppium.id(addButtonId).click();
+    	BaseAppium.xpath(handwritingNote).click();
+    	BaseAppium.id(handTitleEditId).sendKeys("手写笔记");
+//    	BaseAppium.id(handContextEditId).sendKeys("手写笔记内容");
+    	BaseAppium.slideLeft();
+    	Thread.sleep(2000);
+    	BaseAppium.id(saveButtonId).click();
+    	
+    	Thread.sleep(2000);
+    	//检查主页是否有"手写笔记"关键字
+    	String expected = "手写笔记";
+    	String actual = "";
+    	try{
+    		actual = BaseAppium.xpath(handwritingNote).getText();
+    	}catch (Exception e) {
+    		System.out.println("找不到元素");
+    	}
+    	System.out.println("记事本主页有:"+ actual);
+    	Assert.assertEquals(actual, expected, "创建手写笔记失败");
+    	Thread.sleep(2000);
+    }
+    @Test
+    public void createRecordingNote() throws InterruptedException {
+    	BaseAppium.id(addButtonId).click();
+    	BaseAppium.xpath(recordingNote).click();
+    	BaseAppium.id(recordTitleEditId).sendKeys("录音笔记");
+    	BaseAppium.id(recordContextEditId).sendKeys("录音笔记内容");
+    	//长按和滑动都适用
+    	new TouchAction(androidDriver)
+    		.press(PointOption.point(370,1130))
+    		.waitAction(WaitOptions.waitOptions(Duration.ofMillis(5000)))  
+    		.moveTo(PointOption.point(370,1130))
+    		.release()
+    		.perform();
+    	BaseAppium.id(saveButtonId).click();
+    	
+    	Thread.sleep(2000);
+    	//检查主页是否有"录音笔记"关键字
+    	String expected = "录音笔记";
+    	String actual = "";
+    	try{
+    		actual = BaseAppium.xpath(recordingNote).getText();
+    	}catch (Exception e) {
+    		System.out.println("找不到元素");
+    	}
+    	System.out.println("记事本主页有:"+ actual);
+    	Assert.assertEquals(actual, expected, "创建录音笔记失败");
+    	Thread.sleep(2000);
+    }
     @BeforeMethod
     public void beforeMethod() {
     }

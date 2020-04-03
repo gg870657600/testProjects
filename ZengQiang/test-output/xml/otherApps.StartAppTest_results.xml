@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="otherApps"
+           tests="11"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="82.807">
+  <properties />
+  
+  
+            <testcase name="openOppositeStar" time="1.920" classname="otherApps.StartAppTest" />
+                <testcase name="openCompass" time="33.541" classname="otherApps.StartAppTest" />
+                <testcase name="openCalculator" time="2.668" classname="otherApps.StartAppTest" />
+                <testcase name="openWps" time="4.540" classname="otherApps.StartAppTest" />
+                <testcase name="openInputmethod" time="3.229" classname="otherApps.StartAppTest" />
+                <testcase name="openGaller" time="4.742" classname="otherApps.StartAppTest" />
+                <testcase name="openSoundRecorder" time="2.481" classname="otherApps.StartAppTest" />
+                <testcase name="openMusic" time="9.422" classname="otherApps.StartAppTest" />
+                <testcase name="openMctools" time="4.867" classname="otherApps.StartAppTest" />
+                <testcase name="openBrowser" time="7.004" classname="otherApps.StartAppTest" />
+                <testcase name="openPttphone" time="8.393" classname="otherApps.StartAppTest" />
+      
+</testsuite>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 23 17:06:10 CST 2020</td>
+<td>Started on:</td><td>Thu Apr 02 14:44:06 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33749 ms)</td>
+<tr><td>Total time:</td><td>40 seconds (40318 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,40 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='deskclock.Deskclock.beforeTest()'><b>beforeTest</b><br>Test class: deskclock.Deskclock</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: opencv4nodejs module is required to use OpenCV features. Please install it first (npm i -g opencv4nodejs) and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;GH-PC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .DeskClock, appPackage: com.android.deskclock, automationName: Appium, databaseEnabled: false, desired: {appActivity: .DeskClock, appPackage: com.android.deskclock, automationName: Appium, deviceName: 0123456789ABCDEF02
-, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF02, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 81dc521d-048d-4060-ba86-12b892399bb5
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:190)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:224)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:207)
-	at io.appium.java_client.ComparesImages$$FastClassBySpringCGLIB$$3e1ff72.invoke(&lt;generated&gt;)
+<td title='deskclock.DeskclockTest.beforeTest()'><b>beforeTest</b><br>Test class: deskclock.DeskclockTest</td>
+<td><div><pre>java.lang.IllegalArgumentException: Cannot find elements when the selector is null.
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at io.appium.java_client.FindsByAndroidUIAutomator$$FastClassBySpringCGLIB$$93a833f6.invoke(&lt;generated&gt;)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at io.appium.java_client.events.DefaultAspect.doAround(DefaultAspect.java:551)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$96f07418.getImagesSimilarity(&lt;generated&gt;)
-	at deskclock.Deskclock.beforeTest(Deskclock.java:66)
+	at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$7d104857.findElementByAndroidUIAutomator(&lt;generated&gt;)
+	at deskclock.DeskclockTest.beforeTest(DeskclockTest.java:82)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -131,40 +123,32 @@ Session ID: 81dc521d-048d-4060-ba86-12b892399bb5
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1324262781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1324262781'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: opencv4nodejs module is required to use OpenCV features. Please install it first (npm i -g opencv4nodejs) and restart Appium. Read https://github.com/justadudewhohacks/opencv4nodejs#how-to-install for more details on this topic.
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;GH-PC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: .DeskClock, appPackage: com.android.deskclock, automationName: Appium, databaseEnabled: false, desired: {appActivity: .DeskClock, appPackage: com.android.deskclock, automationName: Appium, deviceName: 0123456789ABCDEF02
-, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF02, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF02, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
-Session ID: 81dc521d-048d-4060-ba86-12b892399bb5
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:190)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:224)
-	at io.appium.java_client.ComparesImages.getImagesSimilarity(ComparesImages.java:207)
-	at io.appium.java_client.ComparesImages$$FastClassBySpringCGLIB$$3e1ff72.invoke(&lt;generated&gt;)
+</pre></div><a href='#' onClick='toggleBox("stack-trace755328698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace755328698'><pre>java.lang.IllegalArgumentException: Cannot find elements when the selector is null.
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at io.appium.java_client.FindsByAndroidUIAutomator$$FastClassBySpringCGLIB$$93a833f6.invoke(&lt;generated&gt;)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at io.appium.java_client.events.DefaultAspect.doAround(DefaultAspect.java:551)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
-	at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$96f07418.getImagesSimilarity(&lt;generated&gt;)
-	at deskclock.Deskclock.beforeTest(Deskclock.java:66)
+	at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$7d104857.findElementByAndroidUIAutomator(&lt;generated&gt;)
+	at deskclock.DeskclockTest.beforeTest(DeskclockTest.java:82)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -199,7 +183,7 @@ Session ID: 81dc521d-048d-4060-ba86-12b892399bb5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='deskclock.Deskclock.afterTest()'><b>afterTest</b><br>Test class: deskclock.Deskclock</td>
+<td title='deskclock.DeskclockTest.afterTest()'><b>afterTest</b><br>Test class: deskclock.DeskclockTest</td>
 <td></td>
 <td>0</td>
 <td>null</td></tr>
@@ -212,10 +196,10 @@ Session ID: 81dc521d-048d-4060-ba86-12b892399bb5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='deskclock.Deskclock.alarmClock()'><b>alarmClock</b><br>Test class: deskclock.Deskclock</td>
+<td title='deskclock.DeskclockTest.alarmClock()'><b>alarmClock</b><br>Test class: deskclock.DeskclockTest</td>
 <td></td>
 <td>0</td>
-<td>deskclock.Deskclock@6108b2d7</td></tr>
+<td>deskclock.DeskclockTest@6cd8737</td></tr>
 </table><p>
 </body>
 </html>

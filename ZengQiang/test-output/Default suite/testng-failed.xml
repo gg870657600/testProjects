@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="deskclock.Deskclock">
+      <class name="deskclock.DeskclockTest">
         <methods>
-          <include name="beforeTest"/>
           <include name="alarmClock"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- deskclock.Deskclock -->
+      </class> <!-- deskclock.DeskclockTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

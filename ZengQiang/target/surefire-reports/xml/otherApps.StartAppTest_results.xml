@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="otherApps"
+           tests="11"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="75.441">
+  <properties />
+            <testcase name="openWps" time="1.061" classname="otherApps.StartAppTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;cn.wps.moffice_eng&apos; application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start &apos;cn.wps.moffice.documentmanager.DocumentManager&apos; activity has been denied.Make sure the activity/package names are correct.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GH-PC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'cn.wps.moffice_eng' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start 'cn.wps.moffice.documentmanager.DocumentManager' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+  io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+  io.appium.java_client.android.StartsActivity$$FastClassBySpringCGLIB$$7176530b.invoke(<generated>)
+  org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+  org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+  org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+  org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+  org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+  io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$e1453901.startActivity(<generated>)
+  otherApps.StartAppTest.openWps(StartAppTest.java:147)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="openInputmethod" time="0.983" classname="otherApps.StartAppTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="An unknown server-side error occurred while processing the command. Original error: Cannot start the &apos;com.iflytek.inputmethod&apos; application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start &apos;.wizard.WizardActivity&apos; activity has been denied.Make sure the activity/package names are correct.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GH-PC&apos;, ip: &apos;192.168.43.155&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.iflytek.inputmethod' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start '.wizard.WizardActivity' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+  io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+  io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+  io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+  io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+  io.appium.java_client.android.StartsActivity$$FastClassBySpringCGLIB$$7176530b.invoke(<generated>)
+  org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+  org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+  org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+  org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+  org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+  org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+  io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$e1453901.startActivity(<generated>)
+  otherApps.StartAppTest.openInputmethod(StartAppTest.java:167)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="openOppositeStar" time="2.137" classname="otherApps.StartAppTest" />
+                <testcase name="openMctools" time="4.789" classname="otherApps.StartAppTest" />
+                <testcase name="openBrowser" time="6.828" classname="otherApps.StartAppTest" />
+                <testcase name="openCompass" time="33.435" classname="otherApps.StartAppTest" />
+                <testcase name="openMusic" time="9.126" classname="otherApps.StartAppTest" />
+                <testcase name="openSoundRecorder" time="2.511" classname="otherApps.StartAppTest" />
+                <testcase name="openCalculator" time="2.746" classname="otherApps.StartAppTest" />
+                <testcase name="openPttphone" time="7.114" classname="otherApps.StartAppTest" />
+                <testcase name="openGaller" time="4.711" classname="otherApps.StartAppTest" />
+      
+</testsuite>

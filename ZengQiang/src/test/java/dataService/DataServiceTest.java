@@ -13,13 +13,17 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.asserts.SoftAssert;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
-
+@Listeners({ScreenshotListener.class})
 public class DataServiceTest {
 	AndroidDriver androidDriver;
 	String upstream = "//*[@text = '上行速率最大']";
@@ -36,9 +40,7 @@ public class DataServiceTest {
     @Test
     public void openDataService() throws IOException, InterruptedException {
     	//判断数据业务是否打开,只能判断开关是否打开，不能确定数据是通的
-    	System.out.println( "数据业务是否开启:" + androidDriver.getConnection().isDataEnabled());
-    	
-    	
+    	System.out.println( "数据业务是否开启:" + androidDriver.getConnection().isDataEnabled());   	
     	//如果已经打开则先关闭后再设置上下行速率
     	if(androidDriver.getConnection().isDataEnabled()){
 //    		androidDriver.setConnection(new ConnectionState(0b000));
@@ -60,26 +62,34 @@ public class DataServiceTest {
     	//打开数据业务，见ConnectionState源代码，参数0b代表二进制，100代表4
 //		androidDriver.setConnection(new ConnectionState(0b100));
         BaseAppium.xpath(dataSwitchButton).click();
-        if(BaseAppium.xpath(noNetwork) != null){
-        	BaseAppium.id(enterButtonId).click();
+        //软断言，不影响断言失败后代码执行
+        SoftAssert assertion = new SoftAssert();
+        if(BaseAppium.xpath(noNetwork) != null){        	
         	System.out.println("没有网络");
-        	Assert.assertEquals(1, 0, "没有网络");
-        }else{
-        	//数据开关打开成功弹窗出现
-        	if(BaseAppium.webDriverWait(By.xpath(dataServiceOpenSuccess), 90) != null){
-        		BaseAppium.id(enterButtonId).click();
-        		Assert.assertEquals(1, 1);
-        	}else{
-        		Assert.assertEquals(1, 0, "数据业务打开失败");
-        	}
+        	assertion.assertEquals(1, 0, "没有网络");
+        	Thread.sleep(1000);
+        	BaseAppium.id(enterButtonId).click();
         }
+        else if(BaseAppium.webDriverWait(By.xpath(dataServiceOpenSuccess), 90) != null){        		
+        		assertion.assertEquals(1, 1);        		
+        		BaseAppium.id(enterButtonId).click();
+        }
+        else{
+    		Assert.assertEquals(1, 0, "数据业务打开失败");
+    	}
+        
+        BaseAppium.back();
+        assertion.assertAll();
     }
     //打开网页
-    @Test
+    @Test(dependsOnMethods={"openDataService"})
     public void openWebpage() throws IOException, InterruptedException{
 //    	androidDriver.startActivity(new Activity("com.android.browser",".BrowserActivity"));
 //    	BaseAppium.id(editUrlBoxId).sendKeys("192.168.0.163");
 //    	androidDriver.pressKey(new KeyEvent(AndroidKey.SEARCH));
+    	//清除浏览器数据和缓存
+    	BaseAppium.run("adb shell pm clear com.android.browser");
+    	//打开特定网页
     	BaseAppium.run("adb shell am start -a android.intent.action.VIEW -d http://192.168.0.163");
     	if(BaseAppium.webDriverWait(By.xpath(webpageText), 30) != null){
     		System.out.println("打开网页成功");
@@ -97,6 +107,10 @@ public class DataServiceTest {
 
     @AfterTest
     public void afterTest() {
+    	//关闭数据业务
+    	androidDriver.openNotifications();
+    	BaseAppium.xpath(dataSwitchButton).click();
+    	BaseAppium.id(enterButtonId).click();
     	androidDriver.quit();
     }
 

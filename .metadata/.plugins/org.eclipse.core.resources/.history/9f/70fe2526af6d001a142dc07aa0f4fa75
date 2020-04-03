@@ -1,0 +1,99 @@
+package calendar;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Instant;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.apache.log4j.Logger;
+
+import util.BaseAppium;
+import util.ScreenshotListener;
+import util.ScreenshotMethodObject;
+
+@Listeners({ScreenshotListener.class})  //此处需要写入监听器注解
+public class CalendarTest {
+	public static AndroidDriver androidDriver;
+	String createEvent = "com.android.calendar:id/action_create_event";
+	String scheduleNotice = "//*[@text = '日程测试']";
+	String noticeClearButtonId = "com.android.systemui:id/clear_all_button";
+	String scheduleTitleId = "com.android.calendar:id/title";
+	String saveButtonId = "com.android.calendar:id/action_done";
+	String moreButton = "//*[@content-desc='更多选项']";
+	String deleteButton = "//*[@text = '删除']";
+	String enterButton = "//*[@text='确定']";
+	String remindTimeId = "com.android.calendar:id/reminder_minutes_value";
+	String remindTimeSelect = "//*[@text='30 分钟']";
+	String enterId = "android:id/button1";
+	//使用log4j需要先创建一个Logger对象
+	private static Logger logger = Logger.getLogger(CalendarTest.class);
+    
+//    @Test
+//    public void openCalendar() throws InterruptedException {
+//    	//根据类名断言,是否跳到主界面(adb shell dumpsys activity | find "mFocusedActivity")   	
+//    	String expected = ".AllInOneActivity";
+//    	String actual = androidDriver.currentActivity();
+//    	Assert.assertEquals(actual, expected, "打开日历错误");
+//    	//断言后等待2秒，因为用例失败会截图，不等待会截到下一个用例的图片
+////    	Thread.sleep(2000);
+//    }
+//    @Test(priority = 1)
+//    public void newSchedule() throws InterruptedException {
+//    	//创建日程
+//    	BaseAppium.id(createEvent).click();
+//    	BaseAppium.id(scheduleTitleId).sendKeys("日程测试");
+//    	androidDriver.findElementByAndroidUIAutomator(BaseAppium.scrollTo(remindTimeId, "ID")).click();
+//    	BaseAppium.xpath(remindTimeSelect).click();
+//    	BaseAppium.id(saveButtonId).click();
+//    	//打开通知栏 ，等待日程通知
+//    	androidDriver.openNotifications();
+//    	if(BaseAppium.webDriverWait(By.xpath(scheduleNotice), 30) != null){
+//    		Assert.assertEquals(1, 1);
+//    	}else{
+//    		Assert.assertEquals(1, 0, "日程没有通知");
+//    	}
+//    	Thread.sleep(2000);
+//    }
+//    //删除日程
+//    @Test(priority = 2)
+//    public void deleteSchedule() throws InterruptedException {
+//    	BaseAppium.back();
+//    	BaseAppium.xpath(scheduleNotice).click();
+//    	Thread.sleep(2000);
+//    	BaseAppium.xpath(moreButton).click();
+//    	BaseAppium.xpath(deleteButton).click();
+//    	BaseAppium.id(enterId).click();
+//    	//如果日历主界面没有"日程通知"则删除成功
+//    	if(BaseAppium.xpath(scheduleNotice) == null){
+//    		Assert.assertEquals(1, 1);
+//    	}else{
+//    		Assert.assertEquals(1, 0, "日程删除失败");
+//    	}
+//    }
+    @BeforeTest
+    public void beforeTest() throws IOException, InterruptedException{
+    	androidDriver = BaseAppium.init("com.android.calendar", "com.android.calendar.AllInOneActivity");
+    	ScreenshotListener.driver = androidDriver;
+    	//输入法弹窗,设置-安全-权限设置，给讯飞输入法全部权限
+    	androidDriver.startActivity(new Activity("com.android.settings",".SubSettings"));
+    }
+    @AfterTest
+    public void afterTest(){
+    	//当测试用例运行完毕销毁驱动
+    	androidDriver.quit();
+    }
+    
+}

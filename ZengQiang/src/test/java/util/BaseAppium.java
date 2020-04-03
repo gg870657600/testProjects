@@ -46,8 +46,8 @@ public class BaseAppium {
 	 * @throws IOException 
      */
 	public static AndroidDriver init(String appPackage, String appActivity) throws IOException, InterruptedException{
+		//获得设备名称deviceName
 		String deviceName = run("adb get-serialno");
-		System.out.println("deviceName : " + deviceName);
     	DesiredCapabilities desiredCapabilities=new DesiredCapabilities();
     	desiredCapabilities.setCapability("automationName","Appium");
     	desiredCapabilities.setCapability("platformName","Android"); //设置ios,android平台
@@ -62,7 +62,7 @@ public class BaseAppium {
     	desiredCapabilities.setCapability("resetKeyboard", true);
     	androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
     	//全局设置等待时间，隐式等待
-    	androidDriver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+    	androidDriver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
     	
     	//控件监听
   	    androidDriver = EventFiringWebDriverFactory.getEventFiringWebDriver(androidDriver, new ElementListener(), new WebDriverEventListener());
@@ -106,17 +106,17 @@ public class BaseAppium {
     	try{
     		element = androidDriver.findElementById(elementId);
     	}catch (Exception e) {
-    		System.out.println("找不到元素");
+
     	}
     	return element;
     }
-  //id定位元素
+    //className定位元素
     public static WebElement className(String elementClassName){
     	WebElement element = null;
     	try{
     		element = androidDriver.findElementByClassName(elementClassName);
     	}catch (Exception e) {
-    		System.out.println("找不到元素");
+
     	}
     	return element;
     }
@@ -126,7 +126,7 @@ public class BaseAppium {
     	try{
     		element = androidDriver.findElementByXPath(el);
     	}catch (Exception e) {
-    		System.out.println("找不到元素");
+
     	}
     	return element;
     }
@@ -136,7 +136,7 @@ public class BaseAppium {
     	try{
     		elementList = androidDriver.findElements(by);
     	}catch (Exception e) {
-    		System.out.println("找不到元素");
+
     	}    	
     	return elementList;
     }

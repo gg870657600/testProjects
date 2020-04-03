@@ -9,13 +9,16 @@ import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
-
+@Listeners({ScreenshotListener.class})
 public class StartAppTest {
 	AndroidDriver androidDriver;
 	//"下次再校"弹窗
@@ -43,6 +46,9 @@ public class StartAppTest {
 	String inputPasswordBoxId = "com.raycom.mctools:id/dialog_edit";
 	String toolsFolder = "//*[@content-desc='文件夹：工具']";
 	String musicAppName = "//*[@text='音乐']";
+	String photoText = "//*[@text='照片']";
+	String latelyPlay = "//*[@text='最近播放']";
+	String ordinaryMode = "//*[@text='普通模式']";
 	//打开对星助手
     @Test
     public void openOppositeStar() {
@@ -198,6 +204,45 @@ public class StartAppTest {
     		Assert.assertEquals(1, 1);
     	}else{
     		Assert.assertEquals(1, 0, "打开安全代理失败");
+    	}
+    	Thread.sleep(2000);
+    }
+    //打开相册
+    @Test(priority = 10)
+    public void openGaller() throws InterruptedException {
+    	Activity activity = new Activity("com.android.gallery3d",".app.GalleryActivity");
+    	androidDriver.startActivity(activity);
+    	//请输入密码框存在则打开成功
+    	if(BaseAppium.xpath(photoText).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开相册失败");
+    	}
+    	Thread.sleep(2000);
+    }
+    //打开视频
+    @Test(priority = 11)
+    public void openVideo() throws InterruptedException {
+    	Activity activity = new Activity("com.android.video","com.android.player.VideoBrowser");
+    	androidDriver.startActivity(activity);
+    	//最近播放存在则打开成功
+    	if(BaseAppium.xpath(latelyPlay).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开视频失败");
+    	}
+    	Thread.sleep(2000);
+    }
+    //打开手电筒
+    @Test(priority = 12)
+    public void openFlashlight() throws InterruptedException {
+    	Activity activity = new Activity("com.guoheng.flashlight",".LightActivity");
+    	androidDriver.startActivity(activity);
+    	//最近播放存在则打开成功
+    	if(BaseAppium.xpath(ordinaryMode).isDisplayed()){
+    		Assert.assertEquals(1, 1);
+    	}else{
+    		Assert.assertEquals(1, 0, "打开手电筒失败");
     	}
     	Thread.sleep(2000);
     }

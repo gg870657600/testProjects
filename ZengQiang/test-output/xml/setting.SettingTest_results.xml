@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="154.818">
+           time="152.051">
   <properties />
-            <testcase name="location" time="154.818" classname="setting.SettingTest">
+            <testcase name="location" time="152.051" classname="setting.SettingTest">
                 <failure type="java.lang.AssertionError"
                   message="定位超时 expected [2] but found [1]"
               >
@@ -15,7 +15,7 @@
   org.testng.Assert.failNotEquals(Assert.java:496)
   org.testng.Assert.assertEquals(Assert.java:125)
   org.testng.Assert.assertEquals(Assert.java:372)
-  setting.SettingTest.location(SettingTest.java:78)
+  setting.SettingTest.location(SettingTest.java:85)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

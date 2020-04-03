@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="7" failed="17" ignored="0" total="40" passed="16">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openWebpage.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openWebpage.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addNumToContact.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addNumToContact.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\handDialing.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\handDialing.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\sendSms.png target=_blank>Failed Screen Shot</a>]]>
+    </line>
+  </reporter-output>
+  <suite name="TestSuite" duration-ms="1003520" started-at="2020-03-25T09:03:58 CST" finished-at="2020-03-25T09:20:41 CST">
+    <groups>
+    </groups>
+    <test name="calendar" duration-ms="113430" started-at="2020-03-25T09:03:58 CST" finished-at="2020-03-25T09:05:51 CST">
+      <class name="calendar.CalendarTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:calendar.CalendarTest@6d3af739]" name="beforeTest" is-config="true" duration-ms="67892" started-at="2020-03-25T09:03:58 CST" finished-at="2020-03-25T09:05:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="openCalendar()[pri:0, instance:calendar.CalendarTest@6d3af739]" name="openCalendar" duration-ms="2137" started-at="2020-03-25T09:05:05 CST" finished-at="2020-03-25T09:05:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCalendar -->
+        <test-method status="PASS" signature="newSchedule()[pri:1, instance:calendar.CalendarTest@6d3af739]" name="newSchedule" duration-ms="27691" started-at="2020-03-25T09:05:08 CST" finished-at="2020-03-25T09:05:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSchedule -->
+        <test-method status="PASS" signature="deleteSchedule()[pri:2, instance:calendar.CalendarTest@6d3af739]" name="deleteSchedule" duration-ms="12230" started-at="2020-03-25T09:05:35 CST" finished-at="2020-03-25T09:05:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSchedule -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:calendar.CalendarTest@6d3af739]" name="afterTest" is-config="true" duration-ms="3464" started-at="2020-03-25T09:05:48 CST" finished-at="2020-03-25T09:05:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- calendar.CalendarTest -->
+    </test> <!-- calendar -->
+    <test name="setting" duration-ms="179772" started-at="2020-03-25T09:05:51 CST" finished-at="2020-03-25T09:08:51 CST">
+      <class name="setting.SettingTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:setting.SettingTest@7f416310]" name="beforeTest" is-config="true" duration-ms="43370" started-at="2020-03-25T09:05:51 CST" finished-at="2020-03-25T09:06:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="location()[pri:0, instance:setting.SettingTest@7f416310]" name="location" duration-ms="116963" started-at="2020-03-25T09:06:35 CST" finished-at="2020-03-25T09:08:31 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at setting.SettingTest.location(SettingTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\location.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- location -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:setting.SettingTest@7f416310]" name="afterTest" is-config="true" duration-ms="3744" started-at="2020-03-25T09:08:47 CST" finished-at="2020-03-25T09:08:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- setting.SettingTest -->
+    </test> <!-- setting -->
+    <test name="camera" duration-ms="27628" started-at="2020-03-25T09:08:51 CST" finished-at="2020-03-25T09:09:19 CST">
+      <class name="camera.CameraTest">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:camera.CameraTest@3d8314f0]" name="beforeTest" is-config="true" duration-ms="27581" started-at="2020-03-25T09:08:51 CST" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at camera.CameraTest.countPhoto(CameraTest.java:158)
+at camera.CameraTest.beforeTest(CameraTest.java:110)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="openCamera()[pri:0, instance:camera.CameraTest@3d8314f0]" name="openCamera" duration-ms="0" started-at="2020-03-25T09:09:19 CST" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at camera.CameraTest.countPhoto(CameraTest.java:158)
+at camera.CameraTest.beforeTest(CameraTest.java:110)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCamera -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:camera.CameraTest@3d8314f0]" name="beforeMethod" is-config="true" duration-ms="-1585098559136" started-at="2020-03-25T09:09:19 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:camera.CameraTest@3d8314f0]" name="afterMethod" is-config="true" duration-ms="-1585098559136" started-at="2020-03-25T09:09:19 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="rearVideo()[pri:4, instance:camera.CameraTest@3d8314f0]" name="rearVideo" duration-ms="0" started-at="2020-03-25T09:09:19 CST" depends-on-methods="camera.CameraTest.openCamera" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CameraTest.rearVideo()[pri:4, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CameraTest.rearVideo()[pri:4, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rearVideo -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:camera.CameraTest@3d8314f0]" name="afterTest" is-config="true" duration-ms="-1585098559152" started-at="2020-03-25T09:09:19 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="rearCamera()[pri:1, instance:camera.CameraTest@3d8314f0]" name="rearCamera" duration-ms="0" started-at="2020-03-25T09:09:19 CST" depends-on-methods="camera.CameraTest.openCamera" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CameraTest.rearCamera()[pri:1, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CameraTest.rearCamera()[pri:1, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rearCamera -->
+        <test-method status="SKIP" signature="frontCamera()[pri:2, instance:camera.CameraTest@3d8314f0]" name="frontCamera" duration-ms="0" started-at="2020-03-25T09:09:19 CST" depends-on-methods="camera.CameraTest.openCamera" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CameraTest.frontCamera()[pri:2, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CameraTest.frontCamera()[pri:2, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frontCamera -->
+        <test-method status="SKIP" signature="frontVideo()[pri:3, instance:camera.CameraTest@3d8314f0]" name="frontVideo" duration-ms="0" started-at="2020-03-25T09:09:19 CST" depends-on-methods="camera.CameraTest.openCamera" finished-at="2020-03-25T09:09:19 CST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CameraTest.frontVideo()[pri:3, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CameraTest.frontVideo()[pri:3, instance:camera.CameraTest@3d8314f0] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- frontVideo -->
+      </class> <!-- camera.CameraTest -->
+    </test> <!-- camera -->
+    <test name="fileExplorer" duration-ms="26067" started-at="2020-03-25T09:09:19 CST" finished-at="2020-03-25T09:09:45 CST">
+      <class name="fileExplorer.FileExplorerTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:fileExplorer.FileExplorerTest@2f490758]" name="beforeTest" is-config="true" duration-ms="22011" started-at="2020-03-25T09:09:19 CST" finished-at="2020-03-25T09:09:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="pullFileToPc()[pri:0, instance:fileExplorer.FileExplorerTest@2f490758]" name="pullFileToPc" duration-ms="125" started-at="2020-03-25T09:09:41 CST" finished-at="2020-03-25T09:09:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pullFileToPc -->
+        <test-method status="PASS" signature="pushFileToDevice()[pri:0, instance:fileExplorer.FileExplorerTest@2f490758]" name="pushFileToDevice" duration-ms="141" started-at="2020-03-25T09:09:41 CST" finished-at="2020-03-25T09:09:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pushFileToDevice -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:fileExplorer.FileExplorerTest@2f490758]" name="afterTest" is-config="true" duration-ms="3790" started-at="2020-03-25T09:09:41 CST" finished-at="2020-03-25T09:09:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- fileExplorer.FileExplorerTest -->
+    </test> <!-- fileExplorer -->
+    <test name="notepad" duration-ms="76918" started-at="2020-03-25T09:09:45 CST" finished-at="2020-03-25T09:11:02 CST">
+      <class name="notepad.NotepadTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="beforeTest" is-config="true" duration-ms="17597" started-at="2020-03-25T09:09:45 CST" finished-at="2020-03-25T09:10:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:03 CST" finished-at="2020-03-25T09:10:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="createHandwritingNote()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="createHandwritingNote" duration-ms="5506" started-at="2020-03-25T09:10:03 CST" finished-at="2020-03-25T09:10:08 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at notepad.NotepadTest.createHandwritingNote(NotepadTest.java:98)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createHandwritingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createHandwritingNote -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:17 CST" finished-at="2020-03-25T09:10:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:17 CST" finished-at="2020-03-25T09:10:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="createPictureNote()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="createPictureNote" duration-ms="5382" started-at="2020-03-25T09:10:17 CST" finished-at="2020-03-25T09:10:22 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at notepad.NotepadTest.createPictureNote(NotepadTest.java:73)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createPictureNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createPictureNote -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:31 CST" finished-at="2020-03-25T09:10:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:31 CST" finished-at="2020-03-25T09:10:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="createRecordingNote()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="createRecordingNote" duration-ms="5102" started-at="2020-03-25T09:10:31 CST" finished-at="2020-03-25T09:10:36 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at notepad.NotepadTest.createRecordingNote(NotepadTest.java:121)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createRecordingNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createRecordingNote -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:44 CST" finished-at="2020-03-25T09:10:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:44 CST" finished-at="2020-03-25T09:10:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="createTextNote()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="createTextNote" duration-ms="5591" started-at="2020-03-25T09:10:44 CST" finished-at="2020-03-25T09:10:50 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at notepad.NotepadTest.createTextNote(NotepadTest.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\createTextNote.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createTextNote -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="afterTest" is-config="true" duration-ms="3792" started-at="2020-03-25T09:10:58 CST" finished-at="2020-03-25T09:11:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:notepad.NotepadTest@517cd4b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:10:58 CST" finished-at="2020-03-25T09:10:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- notepad.NotepadTest -->
+    </test> <!-- notepad -->
+    <test name="contacts" duration-ms="63073" started-at="2020-03-25T09:11:02 CST" finished-at="2020-03-25T09:12:05 CST">
+      <class name="contacts.ContactsTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:contacts.ContactsTest@49c43f4e]" name="beforeTest" is-config="true" duration-ms="23603" started-at="2020-03-25T09:11:02 CST" finished-at="2020-03-25T09:11:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="addContacts()[pri:0, instance:contacts.ContactsTest@49c43f4e]" name="addContacts" duration-ms="5460" started-at="2020-03-25T09:11:26 CST" finished-at="2020-03-25T09:11:31 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at contacts.ContactsTest.addContacts(ContactsTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addContacts -->
+        <test-method status="FAIL" signature="editContacts()[pri:1, instance:contacts.ContactsTest@49c43f4e]" name="editContacts" duration-ms="5523" started-at="2020-03-25T09:11:38 CST" finished-at="2020-03-25T09:11:43 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at contacts.ContactsTest.editContacts(ContactsTest.java:54)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\editContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editContacts -->
+        <test-method status="FAIL" signature="deleteContacts()[pri:2, instance:contacts.ContactsTest@49c43f4e]" name="deleteContacts" duration-ms="5335" started-at="2020-03-25T09:11:50 CST" finished-at="2020-03-25T09:11:55 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at contacts.ContactsTest.deleteContacts(ContactsTest.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\deleteContacts.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteContacts -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:contacts.ContactsTest@49c43f4e]" name="afterTest" is-config="true" duration-ms="3995" started-at="2020-03-25T09:12:01 CST" finished-at="2020-03-25T09:12:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- contacts.ContactsTest -->
+    </test> <!-- contacts -->
+    <test name="dataService" duration-ms="46663" started-at="2020-03-25T09:12:05 CST" finished-at="2020-03-25T09:12:52 CST">
+      <class name="dataService.DataServiceTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:dataService.DataServiceTest@70beb599]" name="beforeTest" is-config="true" duration-ms="17643" started-at="2020-03-25T09:12:05 CST" finished-at="2020-03-25T09:12:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="openDataService()[pri:0, instance:dataService.DataServiceTest@70beb599]" name="openDataService" duration-ms="10920" started-at="2020-03-25T09:12:23 CST" finished-at="2020-03-25T09:12:34 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at dataService.DataServiceTest.openDataService(DataServiceTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openDataService.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openDataService -->
+        <test-method status="FAIL" signature="openWebpage()[pri:0, instance:dataService.DataServiceTest@70beb599]" name="openWebpage" duration-ms="6537" started-at="2020-03-25T09:12:38 CST" finished-at="2020-03-25T09:12:44 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[打开网页失败 expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 打开网页失败 expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at dataService.DataServiceTest.openWebpage(DataServiceTest.java:88)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openWebpage.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\openWebpage.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openWebpage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:dataService.DataServiceTest@70beb599]" name="afterTest" is-config="true" duration-ms="3948" started-at="2020-03-25T09:12:48 CST" finished-at="2020-03-25T09:12:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- dataService.DataServiceTest -->
+    </test> <!-- dataService -->
+    <test name="deskclock" duration-ms="24337" started-at="2020-03-25T09:12:52 CST" finished-at="2020-03-25T09:13:16 CST">
+      <class name="deskclock.DeskclockTest">
+        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:deskclock.DeskclockTest@23bb8443]" name="beforeTest" is-config="true" duration-ms="24337" started-at="2020-03-25T09:12:52 CST" finished-at="2020-03-25T09:13:16 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at deskclock.DeskclockTest.beforeTest(DeskclockTest.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="alarmClock()[pri:0, instance:deskclock.DeskclockTest@23bb8443]" name="alarmClock" duration-ms="0" started-at="2020-03-25T09:13:16 CST" finished-at="2020-03-25T09:13:16 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at deskclock.DeskclockTest.beforeTest(DeskclockTest.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alarmClock -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:deskclock.DeskclockTest@23bb8443]" name="afterTest" is-config="true" duration-ms="-1585098796976" started-at="2020-03-25T09:13:16 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- deskclock.DeskclockTest -->
+    </test> <!-- deskclock -->
+    <test name="dialer" duration-ms="106089" started-at="2020-03-25T09:13:17 CST" finished-at="2020-03-25T09:15:03 CST">
+      <class name="dialer.DialerTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:dialer.DialerTest@37574691]" name="beforeTest" is-config="true" duration-ms="33243" started-at="2020-03-25T09:13:17 CST" finished-at="2020-03-25T09:13:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="addNumToContact()[pri:0, instance:dialer.DialerTest@37574691]" name="addNumToContact" duration-ms="10016" started-at="2020-03-25T09:13:50 CST" finished-at="2020-03-25T09:14:00 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at dialer.DialerTest.addNumToContact(DialerTest.java:62)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addNumToContact.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\addNumToContact.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addNumToContact -->
+        <test-method status="FAIL" signature="handDialing()[pri:0, instance:dialer.DialerTest@37574691]" name="handDialing" duration-ms="46154" started-at="2020-03-25T09:14:04 CST" finished-at="2020-03-25T09:14:50 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[没有网络 expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 没有网络 expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at dialer.DialerTest.handDialing(DialerTest.java:95)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\handDialing.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\handDialing.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- handDialing -->
+        <test-method status="FAIL" signature="afterTest()[pri:0, instance:dialer.DialerTest@37574691]" name="afterTest" is-config="true" duration-ms="8144" started-at="2020-03-25T09:14:54 CST" finished-at="2020-03-25T09:15:03 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:882)
+at io.appium.java_client.touch.offset.ElementOption.withElement(ElementOption.java:85)
+at io.appium.java_client.touch.offset.ElementOption.element(ElementOption.java:49)
+at util.BaseAppium.longPress(BaseAppium.java:364)
+at dialer.DialerTest.afterTest(DialerTest.java:150)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.afterRun(TestRunner.java:849)
+at org.testng.TestRunner.run(TestRunner.java:590)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="contactDialing()[pri:0, instance:dialer.DialerTest@37574691]" name="contactDialing" duration-ms="0" started-at="2020-03-25T09:14:54 CST" depends-on-methods="dialer.DialerTest.addNumToContact" finished-at="2020-03-25T09:14:54 CST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DialerTest.contactDialing()[pri:0, instance:dialer.DialerTest@37574691] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DialerTest.contactDialing()[pri:0, instance:dialer.DialerTest@37574691] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactDialing -->
+      </class> <!-- dialer.DialerTest -->
+    </test> <!-- dialer -->
+    <test name="mms" duration-ms="57566" started-at="2020-03-25T09:15:03 CST" finished-at="2020-03-25T09:16:00 CST">
+      <class name="mms.MmsTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:mms.MmsTest@314c508a]" name="beforeTest" is-config="true" duration-ms="24476" started-at="2020-03-25T09:15:03 CST" finished-at="2020-03-25T09:15:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="sendSms()[pri:0, instance:mms.MmsTest@314c508a]" name="sendSms" duration-ms="27614" started-at="2020-03-25T09:15:27 CST" finished-at="2020-03-25T09:15:55 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[发送短息失败 expected [2] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 发送短息失败 expected [2] but found [1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at mms.MmsTest.sendSms(MmsTest.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=E:\testProjects\ZengQiang\screenshots1\sendSms.png target=_blank>Failed Screen Shot</a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sendSms -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:mms.MmsTest@314c508a]" name="afterTest" is-config="true" duration-ms="3682" started-at="2020-03-25T09:15:57 CST" finished-at="2020-03-25T09:16:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- mms.MmsTest -->
+    </test> <!-- mms -->
+    <test name="otherApps" duration-ms="102605" started-at="2020-03-25T09:16:00 CST" finished-at="2020-03-25T09:17:43 CST">
+      <class name="otherApps.StartAppTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:otherApps.StartAppTest@49e202ad]" name="beforeTest" is-config="true" duration-ms="23388" started-at="2020-03-25T09:16:00 CST" finished-at="2020-03-25T09:16:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="openOppositeStar()[pri:0, instance:otherApps.StartAppTest@49e202ad]" name="openOppositeStar" duration-ms="2137" started-at="2020-03-25T09:16:24 CST" finished-at="2020-03-25T09:16:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openOppositeStar -->
+        <test-method status="PASS" signature="openCompass()[pri:1, instance:otherApps.StartAppTest@49e202ad]" name="openCompass" duration-ms="33435" started-at="2020-03-25T09:16:26 CST" finished-at="2020-03-25T09:16:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCompass -->
+        <test-method status="PASS" signature="openCalculator()[pri:2, instance:otherApps.StartAppTest@49e202ad]" name="openCalculator" duration-ms="2746" started-at="2020-03-25T09:16:59 CST" finished-at="2020-03-25T09:17:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCalculator -->
+        <test-method status="PASS" signature="openBrowser()[pri:3, instance:otherApps.StartAppTest@49e202ad]" name="openBrowser" duration-ms="6828" started-at="2020-03-25T09:17:02 CST" finished-at="2020-03-25T09:17:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="openSoundRecorder()[pri:4, instance:otherApps.StartAppTest@49e202ad]" name="openSoundRecorder" duration-ms="2511" started-at="2020-03-25T09:17:09 CST" finished-at="2020-03-25T09:17:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openSoundRecorder -->
+        <test-method status="PASS" signature="openMusic()[pri:5, instance:otherApps.StartAppTest@49e202ad]" name="openMusic" duration-ms="9126" started-at="2020-03-25T09:17:11 CST" finished-at="2020-03-25T09:17:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMusic -->
+        <test-method status="FAIL" signature="openWps()[pri:6, instance:otherApps.StartAppTest@49e202ad]" name="openWps" duration-ms="1061" started-at="2020-03-25T09:17:20 CST" finished-at="2020-03-25T09:17:22 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Cannot start the 'cn.wps.moffice_eng' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start 'cn.wps.moffice.documentmanager.DocumentManager' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'cn.wps.moffice_eng' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start 'cn.wps.moffice.documentmanager.DocumentManager' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+at io.appium.java_client.android.StartsActivity$$FastClassBySpringCGLIB$$7176530b.invoke(<generated>)
+at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$e1453901.startActivity(<generated>)
+at otherApps.StartAppTest.openWps(StartAppTest.java:147)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWps -->
+        <test-method status="FAIL" signature="openInputmethod()[pri:7, instance:otherApps.StartAppTest@49e202ad]" name="openInputmethod" duration-ms="983" started-at="2020-03-25T09:17:22 CST" finished-at="2020-03-25T09:17:23 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.iflytek.inputmethod' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start '.wizard.WizardActivity' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.iflytek.inputmethod' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: The permission to start '.wizard.WizardActivity' activity has been denied.Make sure the activity/package names are correct.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GH-PC', ip: '192.168.43.155', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, databaseEnabled: false, desired: {appActivity: .StarActivity, appPackage: com.gh.staraccess, automationName: Appium, deviceName: 0123456789ABCDEF01
+, noReset: false, platformName: android, platformVersion: 4.4.4, resetKeyboard: true, unicodeKeyboard: true}, deviceManufacturer: LEADCORE, deviceModel: L1860, deviceName: 0123456789ABCDEF01, deviceScreenSize: 720x1280, deviceUDID: 0123456789ABCDEF01, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: false, platform: LINUX, platformName: Android, platformVersion: 4.4.4, resetKeyboard: true, takesScreenshot: true, unicodeKeyboard: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3071fd5f-5139-4a28-a72c-80d08e3a014c
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+at io.appium.java_client.android.StartsActivity.startActivity(StartsActivity.java:45)
+at io.appium.java_client.android.StartsActivity$$FastClassBySpringCGLIB$$7176530b.invoke(<generated>)
+at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+at io.appium.java_client.android.AndroidDriver$$EnhancerBySpringCGLIB$$e1453901.startActivity(<generated>)
+at otherApps.StartAppTest.openInputmethod(StartAppTest.java:167)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInputmethod -->
+        <test-method status="PASS" signature="openPttphone()[pri:8, instance:otherApps.StartAppTest@49e202ad]" name="openPttphone" duration-ms="7114" started-at="2020-03-25T09:17:23 CST" finished-at="2020-03-25T09:17:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPttphone -->
+        <test-method status="PASS" signature="openMctools()[pri:9, instance:otherApps.StartAppTest@49e202ad]" name="openMctools" duration-ms="4789" started-at="2020-03-25T09:17:30 CST" finished-at="2020-03-25T09:17:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMctools -->
+        <test-method status="PASS" signature="openGaller()[pri:10, instance:otherApps.StartAppTest@49e202ad]" name="openGaller" duration-ms="4711" started-at="2020-03-25T09:17:34 CST" finished-at="2020-03-25T09:17:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGaller -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:otherApps.StartAppTest@49e202ad]" name="afterTest" is-config="true" duration-ms="3776" started-at="2020-03-25T09:17:39 CST" finished-at="2020-03-25T09:17:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- otherApps.StartAppTest -->
+    </test> <!-- otherApps -->
+    <test name="others" duration-ms="178124" started-at="2020-03-25T09:17:43 CST" finished-at="2020-03-25T09:20:41 CST">
+      <class name="others.OthersTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeTest" is-config="true" duration-ms="25274" started-at="2020-03-25T09:17:43 CST" finished-at="2020-03-25T09:18:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="fastDialer()[pri:0, instance:others.OthersTest@6385cb26]" name="fastDialer" duration-ms="4976" started-at="2020-03-25T09:18:08 CST" finished-at="2020-03-25T09:18:13 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[没有网络 expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 没有网络 expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at others.OthersTest.fastDialer(OthersTest.java:180)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fastDialer -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:08 CST" finished-at="2020-03-25T09:18:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:08 CST" finished-at="2020-03-25T09:18:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="fastDialer()[pri:0, instance:others.OthersTest@6385cb26]" name="fastDialer" duration-ms="4836" started-at="2020-03-25T09:18:13 CST" finished-at="2020-03-25T09:18:18 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[没有网络 expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 没有网络 expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:839)
+at others.OthersTest.fastDialer(OthersTest.java:180)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fastDialer -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:13 CST" finished-at="2020-03-25T09:18:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:13 CST" finished-at="2020-03-25T09:18:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:18 CST" finished-at="2020-03-25T09:18:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:18:18 CST" finished-at="2020-03-25T09:18:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="hotStartLocationTime()[pri:0, instance:others.OthersTest@6385cb26]" name="hotStartLocationTime" duration-ms="71027" started-at="2020-03-25T09:18:18 CST" finished-at="2020-03-25T09:19:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotStartLocationTime -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:19:29 CST" finished-at="2020-03-25T09:19:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="hotStartLocationTime()[pri:0, instance:others.OthersTest@6385cb26]" name="hotStartLocationTime" duration-ms="68126" started-at="2020-03-25T09:19:29 CST" finished-at="2020-03-25T09:20:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotStartLocationTime -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:19:29 CST" finished-at="2020-03-25T09:19:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:others.OthersTest@6385cb26]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-03-25T09:20:37 CST" finished-at="2020-03-25T09:20:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:others.OthersTest@6385cb26]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-03-25T09:20:37 CST" finished-at="2020-03-25T09:20:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:others.OthersTest@6385cb26]" name="afterTest" is-config="true" duration-ms="3869" started-at="2020-03-25T09:20:37 CST" finished-at="2020-03-25T09:20:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- others.OthersTest -->
+      <class name="setting.SettingTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:setting.SettingTest@7f416310]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-03-25T09:03:58 CST" finished-at="2020-03-25T09:03:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:setting.SettingTest@7f416310]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-03-25T09:20:41 CST" finished-at="2020-03-25T09:20:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- setting.SettingTest -->
+    </test> <!-- others -->
+  </suite> <!-- TestSuite -->
+</testng-results>

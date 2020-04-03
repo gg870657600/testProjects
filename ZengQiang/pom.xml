@@ -6,6 +6,12 @@
   <name>mavenTest</name>
   <description>mavenTest</description>
   
+  <properties>
+         <project.build.sourceEncoding>
+             UTF-8
+         </project.build.sourceEncoding>
+  </properties>
+  
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 	<dependency>
@@ -45,6 +51,56 @@
         <artifactId>poi-ooxml</artifactId>
         <version>4.0.1</version>
     </dependency>
-  	
+  	<dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.1.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <verbose>true</verbose>
+                    <!--在新的虚拟机中开启-->
+                    <fork>true</fork>
+                    <compilerVersion>1.8</compilerVersion>
+                    
+                    <!--源代码的编译-->
+                    <source>1.8</source>
+                    <target>1.8</target>
+
+                </configuration>
+
+                </plugin>
+                <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <!--可以添加多个xml文件-->
+                        <file>testng.xml</file>
+                    </suiteXmlFiles>
+
+                    <properties>
+                        <property>
+
+                            <!--日志级别,0-10,10最详细-->
+                            <name>surefire.testng.verbose</name>
+                            <value>5</value>
+                            <!--允许并行-->
+                            <name>suitethreadpoolsize</name>
+                            <value>2</value>
+                            
+                        </property>
+                    </properties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -17,6 +17,7 @@ import org.apache.commons.lang3.time.StopWatch;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -25,11 +26,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ExcelDataVO;
 import util.ExcelWriter;
 import util.ScreenshotListener;
 
+@Listeners({ScreenshotListener.class})
 public class OthersTest {
   AndroidDriver androidDriver;
   String enterButtonId = "android:id/button1";
@@ -49,35 +53,59 @@ public class OthersTest {
   String endCallButtonId = "com.android.dialer:id/endButton";
   String networkMode = "//*[@text = '网络模式']";
   String airplaneMode = "//*[@text = '飞行模式']";
+  String rememberElement = "//*[@text = '记住我的选择']";
+  String cameraIcon = "//*[@text = '相机']";
   List<ExcelDataVO> dataVOList = new ArrayList<>();
-  @Test(enabled = false)
+  String result = "";
+  
+  //快速拨号
+  @Test(invocationCount = 1,priority = 0)
+  public void fastDialer() throws IOException, InterruptedException{
+	  BaseAppium.run("adb shell am start -a android.intent.action.CALL tel:13281170087 ");
+	  //没网络
+	  if(BaseAppium.elementIsExist(BaseAppium.xpath(noNetwork))){
+		  BaseAppium.id(enterButtonId).click();
+		  System.out.println("没有网络");
+		  Assert.assertEquals(1, 0, "没有网络");
+	  }
+	  //接通成功
+	  else{
+		  if(BaseAppium.webDriverWait(By.id(callTimeId), 60) != null){
+				System.out.println("通话成功");
+				Thread.sleep(5000);
+				BaseAppium.id(endCallButtonId).click();
+				Assert.assertEquals(1, 1);
+		  }else{
+			  Assert.assertEquals(1, 0, "超时未接通或中途被挂断");
+		  }
+	  }
+	  Thread.sleep(10000);
+  }
+  @Test(invocationCount = 1,priority = 1)
   public void hotStartLocationTime() {
 	  Activity activity = new Activity("com.unicore.unicorecdt", ".MainActivity");
-	  for(int i = 0 ; i < 2 ; i++){
-		  androidDriver.startActivity(activity);
-		  //未打开定位按钮则打开
-		  try{
-			  if(BaseAppium.id(enterButtonId).isDisplayed()){
-	  		  BaseAppium.className(switchButton).click();
-	  		  BaseAppium.id(enterButtonId).click();
-	  		  BaseAppium.back();
-	  		  System.out.println("定位已开启");
-			  }
-		  }catch(Exception e){
-			
+	  androidDriver.startActivity(activity);
+	  //操作警告弹窗,未打开定位按钮则打开
+	  try{
+		  if(BaseAppium.id(enterButtonId).isDisplayed()){
+  		  BaseAppium.className(switchButton).click();
+  		  BaseAppium.id(enterButtonId).click();
+  		  BaseAppium.back();
+  		  System.out.println("定位已开启");
 		  }
-		  writeLoationInfo();
-		  BaseAppium.back();
-		  BaseAppium.id(enterButtonId);
+	  }catch(Exception e){
 		
 	  }
-	// 写入数据到工作簿对象内
+	  writeLoationInfo();
+	  BaseAppium.back();
+	  BaseAppium.id(enterButtonId);
+	  //写入数据到工作簿对象内
 	  Workbook workbook = ExcelWriter.exportData(dataVOList);
 	
 	  // 以文件的形式输出工作簿对象
 	  FileOutputStream fileOut = null;
 	  try {
-	      String exportFilePath = "/testProjects/ZengQiang/test-output/hotStartLocationResulte.xlsx";
+	      String exportFilePath = "E:/testProjects/ZengQiang/test-output/hotStartLocationResulte.xlsx";
 	      File exportFile = new File(exportFilePath);
 	      if (!exportFile.exists()) {
 	          exportFile.createNewFile();
@@ -100,10 +128,10 @@ public class OthersTest {
 	          System.out.println("关闭输出流时发生错误，错误原因：" + e.getMessage());
 	      }
 	  }
-	  
+	  Assert.assertEquals(result, "成功", "超过60s还未定位");
   }
   //应急救生切换到正常模式
-  @Test(invocationCount = 2)
+  @Test(invocationCount = 1,priority = 2)
   public void sosToNormalMode(){
 	  Activity activity = new Activity("com.gh.sos", ".MainActivity");
 	  androidDriver.startActivity(activity);
@@ -115,6 +143,12 @@ public class OthersTest {
 		  }else{
 			  System.out.println("sos初始化失败");
 		  }
+		  //回到系统主界面，如果找到"相机"则退出应急模式成功
+	      if(BaseAppium.webDriverWait(By.xpath(cameraIcon), 30) != null){
+	    	  System.out.println("退出应急模式成功");
+	      }else{
+	    	  System.out.println("退出应急模式失败");
+	      }
 	  }catch(Exception e){
 		  
 	  }
@@ -129,15 +163,17 @@ public class OthersTest {
   	  }
 	  
 	  if(BaseAppium.webDriverWait(By.xpath(network), 180) != null){
-		  Assert.assertEquals(1, 1);
 		  System.out.println("退出sos模式后入网成功");
+		  Assert.assertEquals(1, 1);
+		  
 	  }else{
-		  Assert.assertEquals(0, 1, "退出sos模式后入网失败");
 		  System.out.println("退出sos模式后入网失败");
+		  Assert.assertEquals(0, 1, "退出sos模式后入网失败");
+		  
 	  }
   }
   //飞行模式切换到正常模式
-  @Test(enabled = false)
+  @Test(invocationCount = 1,priority = 3)
   public void airplaneToNormalMode() throws InterruptedException{
 	  //长按电源好像不起作用,adb也不起作用
 	  androidDriver.startActivity(new Activity("com.android.settings",".Settings"));
@@ -156,50 +192,14 @@ public class OthersTest {
   	  }
 	  
 	  if(BaseAppium.webDriverWait(By.xpath(network), 180) != null){
-		  Assert.assertEquals(1, 1);
 		  System.out.println("退出飞行模式后入网成功");
+		  Assert.assertEquals(1, 1);
+		  
 	  }else{
-		  Assert.assertEquals(0, 1, "退出sos模式后入网失败");
 		  System.out.println("退出飞行模式后入网失败");
+		  Assert.assertEquals(0, 1, "退出飞行模式后入网失败");
+		  
 	  }
-  }
-  //快速拨号
-  @Test(enabled = false)
-  public void fastDialer() throws IOException, InterruptedException{
-	  BaseAppium.run("adb shell am start -a android.intent.action.CALL tel:13281170087 ");
-	  //没网络
-	  if(BaseAppium.elementIsExist(BaseAppium.xpath(noNetwork))){
-		  BaseAppium.id(enterButtonId).click();
-		  System.out.println("没有网络");
-		  Assert.assertEquals(1, 0, "没有网络");
-	  }
-	  //接通成功
-	  else{
-		  if(BaseAppium.webDriverWait(By.id(callTimeId), 60) != null){
-				System.out.println("通话成功");
-				Thread.sleep(5000);
-				BaseAppium.id(endCallButtonId).click();
-				Assert.assertEquals(1, 1);
-		  }else{
-			  Assert.assertEquals(1, 0, "超时未接通或中途被挂断");
-		  }
-	  }
-	  Thread.sleep(5000);
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-  }
-
-  @AfterMethod
-  public void afterMethod() {
-  }
-
-  @BeforeClass
-  public void beforeClass() {
-  }
-
-  @AfterClass
-  public void afterClass() {
   }
 
   @BeforeTest
@@ -210,7 +210,6 @@ public class OthersTest {
 
   @AfterTest
   public void afterTest() throws InterruptedException {
-	  Thread.sleep(10000);
 	  androidDriver.quit();
   }
   //定位并把定位信息写入到excel文件
@@ -228,9 +227,9 @@ public class OthersTest {
 	  String longitude = BaseAppium.id(longitudeId).getText();
 	  String latitude = BaseAppium.id(latitudeId).getText();
 	  String altitude = BaseAppium.id(altitudeId).getText();
-	  String result = "失败";
+	  
 	  String locationTime = "";
-	  System.out.println("定位:" + longitude);
+	  System.out.println("经度定位:" + longitude);
 	  
 //	  dataVOList = new ArrayList<>();
 	  //循环判断经度数据是否有变化，有变化则定位成功
@@ -246,7 +245,6 @@ public class OthersTest {
 			  //结束计时
 	//		  watch.stop();
 			  System.out.println("定位成功:" + longitude2 + "定位时间:" + (locationEnd - locationStart));
-	//		  Assert.assertEquals(1, 1, "定位成功");
 			  longitude = longitude2;
 			  latitude = BaseAppium.id(latitudeId).getText();
 			  altitude = BaseAppium.id(altitudeId).getText();
@@ -263,7 +261,6 @@ public class OthersTest {
 		  //超过60秒未定到位退出循环
 		  if(locationEnd-locationStart >= (int)60000){
 			  System.out.println("超过60s还未定位:"+(locationEnd-locationStart));
-	//		  Assert.assertEquals(1, 2, "定位超时");
 			  result = "失败";
 			  locationTime =  ">60s 未定位";
 			  dataVO.setLongitude(longitude);

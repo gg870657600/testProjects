@@ -9,13 +9,16 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
-
+@Listeners({ScreenshotListener.class})
 public class SosTest {
 	AndroidDriver androidDriver;
 	String close = "//*[@text = '关闭']";
@@ -30,14 +33,15 @@ public class SosTest {
 	String longitudeId = "com.gh.sos:id/edt_longitude";
 	String latitudeId = "com.gh.sos:id/edt_latitude";
 	String altitudeId = "com.gh.sos:id/edt_altitude";
+	String cameraIcon = "//*[@text = '相机']";
 	//自动定位发送sos
     @Test
-    public void locationSendSos() {
+    public void locationSendSos() throws InterruptedException {
     	System.out.println("sos初始化中。。。");
     	int expected = 1;
     	int actual = 0;
     	//发送中，等待信关站确认
-    	WebElement el1 = BaseAppium.webDriverWait(By.xpath(beforeSend), 30);
+    	WebElement el1 = BaseAppium.webDriverWait(By.xpath(beforeSend), 40);
     	
     	if(el1 != null){
     		System.out.println("sos初始化完成");
@@ -45,7 +49,7 @@ public class SosTest {
     		//点击sos按钮后出现"发送中，等待信关站确认"弹窗
         	if(BaseAppium.elementIsExist(BaseAppium.xpath(sending))){
         		System.out.println("sos发送中...");
-        		BaseAppium.id(sosButtonId).click();
+        		BaseAppium.id(enterButtonId).click();
         	}else{
         		//手动输入经纬度信息
         		BaseAppium.id(longitudeId).sendKeys("66");
@@ -55,24 +59,23 @@ public class SosTest {
         		System.out.println("手动发送sos中...");
         	}
         	//收到信息发送成功弹窗则成功
-    		try{
-        		BaseAppium.webDriverWait(By.xpath(sendSuccess), 60);
+        	//没用显示等待的原因，直接被监听点了确定按钮，显示等待找不到元素webDriverWait(By.xpath(sendSuccess), 60)
+        	if(BaseAppium.xpath(sendSuccess) != null){
         		BaseAppium.id(enterButtonId).click();
         		System.out.println("发送sos成功");
         		actual = 1;
-        	}catch(Exception e){
-        		System.out.println("发送sos失败");
-        	}
+        	}       		
     	}else{
     		System.out.println("sos一直初始化中。。。");
     	}
+    	Thread.sleep(2000);
+    	BaseAppium.back();
+    	BaseAppium.id(enterButtonId).click();
+    	System.out.println("退出应急模式中...");
     	Assert.assertEquals(actual, expected, "sos发送失败");
     	
     }
-    //手动定位发送sos
-    @Test
-    public void handLocationSendSos() {
-    }
+    
     @BeforeTest
     public void beforeTest() throws IOException, InterruptedException {
     	
@@ -99,7 +102,14 @@ public class SosTest {
     }
 
     @AfterTest
-    public void afterTest() {
+    public void afterTest() throws InterruptedException {
+    	//回到系统主界面，如果找到"相机"则退出应急模式成功
+    	if(BaseAppium.webDriverWait(By.xpath(cameraIcon), 30) != null){
+    		System.out.println("退出应急模式成功");
+    	}else{
+    		System.out.println("退出应急模式失败");
+    	}
+    	androidDriver.quit();
     }
 
 }

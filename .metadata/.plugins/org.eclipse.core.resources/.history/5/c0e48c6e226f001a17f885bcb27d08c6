@@ -1,0 +1,285 @@
+package others;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+
+import org.apache.commons.lang3.time.StopWatch;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.BaseAppium;
+import util.ExcelDataVO;
+import util.ExcelWriter;
+import util.ScreenshotListener;
+
+public class OthersTest {
+  AndroidDriver androidDriver;
+  String enterButtonId = "android:id/button1";
+  String switchButton = "android.widget.Switch";
+  //定位
+  String longitudeId = "com.unicore.unicorecdt:id/tv_lon";
+  String latitudeId = "com.unicore.unicorecdt:id/tv_lat";
+  String altitudeId = "com.unicore.unicorecdt:id/tv_alt";
+  //sos
+  String sosText = "//*[contains(@text, '点击按钮')]";
+  //"下次再校"弹窗
+  String nextButtonId = "android:id/button2";
+  String network = "//*[@text = '已入网']";
+  String noNetwork = "//*[@text = '无法访问移动网络']";
+  String callStateEndCall = "//*[@text = '已结束通话']";
+  String callTimeId = "com.android.dialer:id/elapsedTime";
+  String endCallButtonId = "com.android.dialer:id/endButton";
+  String networkMode = "//*[@text = '网络模式']";
+  String airplaneMode = "//*[@text = '飞行模式']";
+  String rememberElement = "//*[@text = '记住我的选择']";
+
+  List<ExcelDataVO> dataVOList = new ArrayList<>();
+  @Test(invocationCount = 2)
+  public void hotStartLocationTime() {
+	  Activity activity = new Activity("com.unicore.unicorecdt", ".MainActivity");
+//	  for(int i = 0 ; i < 2 ; i++){
+		  androidDriver.startActivity(activity);
+		  //操作警告弹窗,未打开定位按钮则打开
+		  try{
+			  if(BaseAppium.id(enterButtonId).isDisplayed()){
+	  		  BaseAppium.className(switchButton).click();
+	  		  BaseAppium.id(enterButtonId).click();
+	  		  BaseAppium.back();
+	  		  System.out.println("定位已开启");
+			  }
+		  }catch(Exception e){
+			
+		  }
+		  writeLoationInfo();
+		  BaseAppium.back();
+		  BaseAppium.id(enterButtonId);
+		
+//	  }
+	// 写入数据到工作簿对象内
+	  Workbook workbook = ExcelWriter.exportData(dataVOList);
+	
+	  // 以文件的形式输出工作簿对象
+	  FileOutputStream fileOut = null;
+	  try {
+	      String exportFilePath = "/testProjects/ZengQiang/test-output/hotStartLocationResulte.xlsx";
+	      File exportFile = new File(exportFilePath);
+	      if (!exportFile.exists()) {
+	          exportFile.createNewFile();
+	      }
+	
+	      fileOut = new FileOutputStream(exportFilePath);
+	      workbook.write(fileOut);
+	      fileOut.flush();
+	  } catch (Exception e) {
+	  	System.out.println("输出Excel时发生错误，错误原因：" + e.getMessage());
+	  } finally {
+	      try {
+	          if (null != fileOut) {
+	              fileOut.close();
+	          }
+	          if (null != workbook) {
+	              workbook.close();
+	          }
+	      } catch (IOException e) {
+	          System.out.println("关闭输出流时发生错误，错误原因：" + e.getMessage());
+	      }
+	  }
+	  
+  }
+  //应急救生切换到正常模式
+  @Test(invocationCount = 2)
+  public void sosToNormalMode(){
+	  Activity activity = new Activity("com.gh.sos", ".MainActivity");
+	  androidDriver.startActivity(activity);
+	  try{
+		  //进入sos，等待初始化完成
+		  if(BaseAppium.webDriverWait(By.xpath(sosText), 60) != null){
+			  BaseAppium.back();
+			  BaseAppium.id(enterButtonId).click();
+		  }else{
+			  System.out.println("sos初始化失败");
+		  }
+	  }catch(Exception e){
+		  
+	  }
+	  //打开对星助手，监控是否入网成功
+	  androidDriver.startActivity(new Activity("com.gh.staraccess", ".StarActivity"));
+	  try{
+  		if(BaseAppium.id(nextButtonId) != null){
+      		BaseAppium.id(nextButtonId).click();     		
+      	}
+  	  }catch(Exception e){
+  		
+  	  }
+	  
+	  if(BaseAppium.webDriverWait(By.xpath(network), 180) != null){
+		  System.out.println("退出sos模式后入网成功");
+		  Assert.assertEquals(1, 1);
+		  
+	  }else{
+		  System.out.println("退出sos模式后入网失败");
+		  Assert.assertEquals(0, 1, "退出sos模式后入网失败");
+		  
+	  }
+  }
+  //飞行模式切换到正常模式
+  @Test(invocationCount = 2)
+  public void airplaneToNormalMode() throws InterruptedException{
+	  //长按电源好像不起作用,adb也不起作用
+	  androidDriver.startActivity(new Activity("com.android.settings",".Settings"));
+	  BaseAppium.xpath(networkMode).click();
+	  BaseAppium.xpath(airplaneMode).click();
+	  Thread.sleep(5000);
+	  BaseAppium.xpath(airplaneMode).click();
+	  //打开对星助手，监控是否入网成功
+	  androidDriver.startActivity(new Activity("com.gh.staraccess", ".StarActivity"));
+	  try{
+  		if(BaseAppium.id(nextButtonId) != null){
+      		BaseAppium.id(nextButtonId).click();     		
+      	}
+  	  }catch(Exception e){
+  		
+  	  }
+	  
+	  if(BaseAppium.webDriverWait(By.xpath(network), 180) != null){
+		  System.out.println("退出飞行模式后入网成功");
+		  Assert.assertEquals(1, 1);
+		  
+	  }else{
+		  System.out.println("退出飞行模式后入网失败");
+		  Assert.assertEquals(0, 1, "退出飞行模式后入网失败");
+		  
+	  }
+  }
+  //快速拨号
+  @Test(invocationCount = 2)
+  public void fastDialer() throws IOException, InterruptedException{
+	  BaseAppium.run("adb shell am start -a android.intent.action.CALL tel:13281170087 ");
+	  //没网络
+	  if(BaseAppium.elementIsExist(BaseAppium.xpath(noNetwork))){
+		  BaseAppium.id(enterButtonId).click();
+		  System.out.println("没有网络");
+		  Assert.assertEquals(1, 0, "没有网络");
+	  }
+	  //接通成功
+	  else{
+		  if(BaseAppium.webDriverWait(By.id(callTimeId), 60) != null){
+				System.out.println("通话成功");
+				Thread.sleep(5000);
+				BaseAppium.id(endCallButtonId).click();
+				Assert.assertEquals(1, 1);
+		  }else{
+			  Assert.assertEquals(1, 0, "超时未接通或中途被挂断");
+		  }
+	  }
+	  Thread.sleep(5000);
+  }
+  @BeforeMethod
+  public void beforeMethod() {
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+  }
+
+  @BeforeClass
+  public void beforeClass() {
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+
+  @BeforeTest
+  public void beforeTest() throws IOException, InterruptedException {
+	  androidDriver = BaseAppium.init("com.android.launcher3", "com.android.launcher3.Launcher");
+  	  ScreenshotListener.driver = androidDriver;
+  }
+
+  @AfterTest
+  public void afterTest() throws InterruptedException {
+	  androidDriver.quit();
+  }
+  //定位并把定位信息写入到excel文件
+  public void writeLoationInfo(){
+  	  
+//	  //StopWatch是Apache Commons Lang库内的一部分。可以用来方便地进行计时
+//	  StopWatch watch = new StopWatch();
+//	  //开始计时
+//	  watch.start();
+	  
+	  
+	  long locationStart = new Date().getTime();
+	  System.out.println("开始计时:" + locationStart);
+	  
+	  String longitude = BaseAppium.id(longitudeId).getText();
+	  String latitude = BaseAppium.id(latitudeId).getText();
+	  String altitude = BaseAppium.id(altitudeId).getText();
+	  String result = "失败";
+	  String locationTime = "";
+	  System.out.println("经度定位:" + longitude);
+	  
+//	  dataVOList = new ArrayList<>();
+	  //循环判断经度数据是否有变化，有变化则定位成功
+	  while(true){
+		  //创建需要写入的数据列表
+		  ExcelDataVO dataVO = new ExcelDataVO();
+		  
+		  long locationEnd = new Date().getTime();
+		  String longitude2 = BaseAppium.id(longitudeId).getText();
+		  System.out.println("定位中....");
+		  //定到位退出循环
+		  if(!longitude.equals(longitude2)){
+			  //结束计时
+	//		  watch.stop();
+			  System.out.println("定位成功:" + longitude2 + "定位时间:" + (locationEnd - locationStart));
+	//		  Assert.assertEquals(1, 1, "定位成功");
+			  longitude = longitude2;
+			  latitude = BaseAppium.id(latitudeId).getText();
+			  altitude = BaseAppium.id(altitudeId).getText();
+			  locationTime = String.valueOf(locationEnd - locationStart);
+			  result = "成功";
+			  dataVO.setLongitude(longitude);
+		      dataVO.setLatitude(latitude);
+		      dataVO.setAltitude(altitude);
+		      dataVO.setResult(result);
+		      dataVO.setLocationTime(locationTime);
+		      dataVOList.add(dataVO);
+			  break;
+		  }
+		  //超过60秒未定到位退出循环
+		  if(locationEnd-locationStart >= (int)60000){
+			  System.out.println("超过60s还未定位:"+(locationEnd-locationStart));
+	//		  Assert.assertEquals(1, 2, "定位超时");
+			  result = "失败";
+			  locationTime =  ">60s 未定位";
+			  dataVO.setLongitude(longitude);
+		      dataVO.setLatitude(latitude);
+		      dataVO.setAltitude(altitude);
+		      dataVO.setResult(result);
+		      dataVO.setLocationTime(locationTime);
+		      dataVOList.add(dataVO);
+			  break;
+		  }	       
+	  }	  
+  }
+
+}

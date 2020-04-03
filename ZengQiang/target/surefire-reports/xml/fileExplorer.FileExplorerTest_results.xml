@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="fileExplorer"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.266">
+  <properties />
+  
+  
+            <testcase name="pullFileToPc" time="0.125" classname="fileExplorer.FileExplorerTest" />
+                <testcase name="pushFileToDevice" time="0.141" classname="fileExplorer.FileExplorerTest" />
+      
+</testsuite>

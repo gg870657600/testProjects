@@ -7,22 +7,24 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.apache.log4j.Logger;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
-import util.ScreenshotMethodObject;
 
+//断言失败监听截图;重写了断言方法，断言失败可以继续执行该用例后面的代码
 @Listeners({ScreenshotListener.class})  //此处需要写入监听器注解
 public class CalendarTest {
 	public static AndroidDriver androidDriver;
@@ -37,25 +39,23 @@ public class CalendarTest {
 	String remindTimeId = "com.android.calendar:id/reminder_minutes_value";
 	String remindTimeSelect = "//*[@text='30 分钟']";
 	String enterId = "android:id/button1";
+	String permission = "android:id/title";
+	String allSelectButton = "//*[@text='全选']";
+	String batchSetting = "//*[@text='批量设置']";
+	String allowButton = "//*[@text='允许']";
+	
 	//使用log4j需要先创建一个Logger对象
 	private static Logger logger = Logger.getLogger(CalendarTest.class);
     
     @Test
     public void openCalendar() throws InterruptedException {
-    	//根据类名断言,是否跳到主界面(adb shell dumpsys activity | find "mFocusedActivity")
-    	logger.debug("Here is some DEBUG");  
-    	logger.info("Here is some INFO");  
-    	logger.warn("Here is some WARN");  
-    	logger.error("Here is some ERROR");  
-    	logger.fatal("Here is some FATAL");
-    	
+    	//根据类名断言,是否跳到主界面(adb shell dumpsys activity | find "mFocusedActivity")   	
     	String expected = ".AllInOneActivity";
-    	String actual = androidDriver.currentActivity();
+    	String actual = androidDriver.currentActivity(); 
     	Assert.assertEquals(actual, expected, "打开日历错误");
-    	//断言后等待2秒，因为用例失败会截图，不等待会截到下一个用例的图片
-//    	Thread.sleep(2000);
+    	Thread.sleep(2000);   	
     }
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void newSchedule() throws InterruptedException {
     	//创建日程
     	BaseAppium.id(createEvent).click();
@@ -73,7 +73,7 @@ public class CalendarTest {
     	Thread.sleep(2000);
     }
     //删除日程
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void deleteSchedule() throws InterruptedException {
     	BaseAppium.back();
     	BaseAppium.xpath(scheduleNotice).click();
@@ -91,8 +91,30 @@ public class CalendarTest {
     @BeforeTest
     public void beforeTest() throws IOException, InterruptedException{
     	androidDriver = BaseAppium.init("com.android.calendar", "com.android.calendar.AllInOneActivity");
+    	//获得root权限
+    	BaseAppium.run("adb root");
+    	BaseAppium.run("adb remount");
     	ScreenshotListener.driver = androidDriver;
-
+    	//输入法弹窗经常出现，这里给讯飞输入法所有权限,设置-安全-权限设置，给讯飞输入法全部权限
+    	androidDriver.startActivity(new Activity("com.android.settings",".Settings"));
+    	androidDriver.findElementByAndroidUIAutomator(BaseAppium.scrollTo("安全", "TEXT")).click();
+    	BaseAppium.elList(By.id(permission)).get(1).click();
+    	androidDriver.findElementByAndroidUIAutomator(BaseAppium.scrollTo("讯飞输入法", "TEXT")).click();
+    	BaseAppium.xpath(moreButton).click();
+    	BaseAppium.xpath(allSelectButton).click();
+    	BaseAppium.xpath(moreButton).click();
+    	BaseAppium.xpath(batchSetting).click();
+    	BaseAppium.xpath(allowButton).click();
+    	//给ustar所有权限
+    	BaseAppium.back();
+    	androidDriver.findElementByAndroidUIAutomator(BaseAppium.scrollTo("uSTAR", "TEXT")).click();
+    	BaseAppium.xpath(moreButton).click();
+    	BaseAppium.xpath(allSelectButton).click();
+    	BaseAppium.xpath(moreButton).click();
+    	BaseAppium.xpath(batchSetting).click();
+    	BaseAppium.xpath(allowButton).click();
+    	androidDriver.launchApp();
+    	
     }
     @AfterTest
     public void afterTest(){

@@ -22,6 +22,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import util.AssertListener;
+import util.Assertion;
 import util.BaseAppium;
 import util.ScreenshotListener;
 @Listeners({ScreenshotListener.class})
@@ -43,14 +45,16 @@ public class CameraTest {
 	public void openCamera() throws InterruptedException {
 
     	//根据类名断言,是否跳到主界面(adb shell dumpsys activity | find "mFocusedActivity")
-
-    	String expected = "com.android.camera.CameraLauncher";
-    	String actual = androidDriver.currentActivity();
-    	Assert.assertEquals(actual, expected, "打开相机失败");
+		if(BaseAppium.id(shutterButton).isDisplayed()){
+			Assert.assertEquals(1, 1);
+		}else{
+			Assert.assertEquals(1, 0, "打开相机失败");
+		}
+    	
     	Thread.sleep(2000);
     }
 	//后置摄像头拍照
-    @Test(priority = 1)   //priority执行优先级
+    @Test(priority = 1,dependsOnMethods={"openCamera"})   //priority执行优先级
     public void rearCamera() throws InterruptedException {
     	BaseAppium.id(shutterButton).click();
     	Thread.sleep(2000);
@@ -61,7 +65,7 @@ public class CameraTest {
     	Thread.sleep(2000);
     }
     //前置摄像头拍照
-    @Test(priority = 2)
+    @Test(priority = 2,dependsOnMethods={"openCamera"})
     public void frontCamera() throws InterruptedException {
     	BaseAppium.id(switchCamera).click();
     	Thread.sleep(2000);
@@ -72,7 +76,7 @@ public class CameraTest {
     	Thread.sleep(2000);
     }
     //前置摄像头录像
-    @Test(priority = 3)
+    @Test(priority = 3,dependsOnMethods={"openCamera"})
     public void frontVideo() throws InterruptedException {
 
     	BaseAppium.id(cameraVideoSwitchButton).click();
@@ -86,7 +90,7 @@ public class CameraTest {
     	Thread.sleep(2000);
     }
     //后置摄像头录像
-    @Test(priority = 4)
+    @Test(priority = 4,dependsOnMethods={"openCamera"})
     public void rearVideo() throws InterruptedException {
 
     	BaseAppium.id(switchCamera).click();

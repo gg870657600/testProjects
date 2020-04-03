@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="deskclock"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="65.434">
+  <properties />
+  
+  
+            <testcase name="alarmClock" time="65.434" classname="deskclock.DeskclockTest" />
+      
+</testsuite>

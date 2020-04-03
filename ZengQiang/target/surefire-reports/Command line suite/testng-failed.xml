@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="fileExplorer.FileExplorerTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="pullFileToPc"/>
+          <include name="afterTest"/>
+          <include name="pushFileToDevice"/>
+        </methods>
+      </class> <!-- fileExplorer.FileExplorerTest -->
+      <class name="dialer.DialerTest">
+        <methods>
+          <include name="addNumToContact"/>
+          <include name="handDialing"/>
+          <include name="contactDialing"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- dialer.DialerTest -->
+      <class name="mms.MmsTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="sendSms"/>
+        </methods>
+      </class> <!-- mms.MmsTest -->
+      <class name="otherApps.StartAppTest">
+        <methods>
+          <include name="openOppositeStar"/>
+          <include name="openMusic"/>
+          <include name="beforeTest"/>
+          <include name="openBrowser"/>
+          <include name="openSoundRecorder"/>
+          <include name="openPttphone"/>
+          <include name="openCompass"/>
+          <include name="openCalculator"/>
+          <include name="openWps"/>
+          <include name="afterTest"/>
+          <include name="openMctools"/>
+          <include name="openInputmethod"/>
+          <include name="openGaller"/>
+        </methods>
+      </class> <!-- otherApps.StartAppTest -->
+      <class name="sos.SosTest">
+        <methods>
+          <include name="handLocationSendSos"/>
+          <include name="locationSendSos"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- sos.SosTest -->
+      <class name="notepad.NotepadTest">
+        <methods>
+          <include name="createTextNote"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- notepad.NotepadTest -->
+      <class name="setting.SettingTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="location"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- setting.SettingTest -->
+      <class name="calendar.CalendarTest">
+        <methods>
+          <include name="deleteSchedule"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="newSchedule"/>
+          <include name="openCalendar"/>
+        </methods>
+      </class> <!-- calendar.CalendarTest -->
+      <class name="camera.CameraTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="rearCamera"/>
+          <include name="afterTest"/>
+          <include name="frontCamera"/>
+          <include name="rearVideo"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="openCamera"/>
+          <include name="frontVideo"/>
+        </methods>
+      </class> <!-- camera.CameraTest -->
+      <class name="contacts.ContactsTest">
+        <methods>
+          <include name="deleteContacts"/>
+          <include name="addContacts"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="editContacts"/>
+        </methods>
+      </class> <!-- contacts.ContactsTest -->
+      <class name="others.OthersTest">
+        <methods>
+          <include name="fastDialer"/>
+          <include name="beforeMethod"/>
+          <include name="hotStartLocationTime"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="airplaneToNormalMode"/>
+          <include name="afterTest"/>
+          <include name="sosToNormalMode"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- others.OthersTest -->
+      <class name="ustar.UstarTest">
+        <methods>
+          <include name="ustarLocation"/>
+          <include name="hotStartLocationTime"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- ustar.UstarTest -->
+      <class name="dataService.DataServiceTest">
+        <methods>
+          <include name="openDataService"/>
+          <include name="openWebpage"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- dataService.DataServiceTest -->
+      <class name="simpleMode.SimpleModeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="openSimpleMode"/>
+          <include name="simpleModeOpenApp"/>
+        </methods>
+      </class> <!-- simpleMode.SimpleModeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="classes" thread-count="5">
+    <!-- 全局设置失败自动截图 
+    <listeners>
+	        <listener class-name="util.ScreenshotListener" />
+	</listeners> 
+	-->
+	<!--因为断言失败不会执行该测试用例中的后续代码，这里重写了断言方法
+	<listeners>
+		<listener class-name="util.AssertListener"></listener>
+	</listeners> 
+	-->        
+    <test name="calendar">           
+        <classes>                 
+            <class name="calendar.CalendarTest"/>             
+        </classes>
+        <listeners>
+		//reportNG监听
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+			<listener class-name="util.ScreenshotListener" />
+		</listeners>
+    </test>
+    
+</suite>

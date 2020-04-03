@@ -1,0 +1,171 @@
+package notepad;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.time.Duration;
+
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import util.BaseAppium;
+import util.ScreenshotListener;
+@Listeners({ScreenshotListener.class})
+public class NotepadTest {
+	public static AndroidDriver androidDriver;
+	public static String addButtonId = "com.gh.notepad:id/button_type";
+	public static String textNote = "//*[@text='文本笔记']";
+	public static String pictureNote = "//*[@text='图片笔记']";
+	public static String handwritingNote = "//*[@text='手写笔记']";
+	public static String recordingNote = "//*[@text='录音笔记']";
+	//文本笔记
+	public static String textTitleEditId = "com.gh.notepad:id/new_text_title";
+	public static String textContextEditId = "com.gh.notepad:id/new_text_context";
+	//图片笔记
+	public static String pictureTitleEditId = "com.gh.notepad:id/new_camera_title";
+	public static String pictureContextEditId = "com.gh.notepad:id/new_camera_context";
+	public static String pictureAddButtonId = "com.gh.notepad:id/imageview_addpic";
+	public static String takePhotoButtonId = "com.gh.notepad:id/btn_take_photo";
+	public static String shutterButton = "com.android.camera2:id/shutter_button";
+	public static String enterButtonId = "com.android.camera2:id/btn_done";
+	public static String saveButtonId = "com.gh.notepad:id/save";
+	//手写笔记
+	public static String handTitleEditId = "com.gh.notepad:id/et_handtitle";
+	public static String handContextEditId = "com.gh.notepad:id/et_handwrite";
+	//录音笔记
+	public static String recordTitleEditId = "com.gh.notepad:id/new_record_title";
+	public static String recordContextEditId = "com.gh.notepad:id/new_record_context";
+	public static String recordButtonId = "com.gh.notepad:id/new_record";
+	
+	public static String notepadList = "android.widget.RelativeLayout";
+	
+    @Test
+    public void createTextNote() throws InterruptedException {
+//    	BaseAppium.id(addButtonId).click();
+//    	BaseAppium.xpath(textNote).click();
+//    	BaseAppium.id(textTitleEditId).sendKeys("文本笔记");
+//    	BaseAppium.id(textContextEditId).sendKeys("文本笔记内容");    	
+//    	BaseAppium.id(saveButtonId).click();
+//    	Thread.sleep(2000);
+//    	//检查主页是否有"文本笔记"关键字
+//    	String expected = "文本笔记";
+//    	String actual = "";
+//    	try{
+//    		actual = BaseAppium.xpath(textNote).getText();
+//    	}catch (Exception e) {
+//    		System.out.println("找不到元素");
+//    	}
+//    	
+//    	System.out.println("记事本主页有:"+ actual);
+//    	Assert.assertEquals(actual, expected, "创建文本笔记失败");
+//    	Thread.sleep(2000);   	
+    }
+//    @Test
+//    public void createPictureNote() throws InterruptedException {
+//    	BaseAppium.id(addButtonId).click();
+//    	BaseAppium.xpath(pictureNote).click();
+//    	BaseAppium.id(pictureTitleEditId).sendKeys("图片笔记");
+//    	BaseAppium.id(pictureContextEditId).sendKeys("图片笔记内容");
+//    	BaseAppium.id(pictureAddButtonId).click();
+//    	BaseAppium.id(takePhotoButtonId).click();
+//    	BaseAppium.id(shutterButton).click();
+//    	BaseAppium.id(enterButtonId).click();
+//    	BaseAppium.id(saveButtonId).click();
+//    	
+//    	Thread.sleep(2000);
+//    	//检查主页是否有"图片笔记"关键字
+//    	String expected = "图片笔记";
+//    	String actual = "";
+//    	try{
+//    		actual = BaseAppium.xpath(pictureNote).getText();
+//    	}catch (Exception e) {
+//    		System.out.println("找不到元素");
+//    	}
+//    	System.out.println("记事本主页有:"+ actual);
+//    	Assert.assertEquals(actual, expected, "创建图片笔记失败");
+//    	Thread.sleep(2000);
+//    }
+//    @Test
+//    public void createHandwritingNote() throws InterruptedException {
+//    	BaseAppium.id(addButtonId).click();
+//    	BaseAppium.xpath(handwritingNote).click();
+//    	BaseAppium.id(handTitleEditId).sendKeys("手写笔记");
+////    	BaseAppium.id(handContextEditId).sendKeys("手写笔记内容");
+//    	BaseAppium.slideLeft();
+//    	Thread.sleep(2000);
+//    	BaseAppium.id(saveButtonId).click();
+//    	
+//    	Thread.sleep(2000);
+//    	//检查主页是否有"手写笔记"关键字
+//    	String expected = "手写笔记";
+//    	String actual = "";
+//    	try{
+//    		actual = BaseAppium.xpath(handwritingNote).getText();
+//    	}catch (Exception e) {
+//    		System.out.println("找不到元素");
+//    	}
+//    	System.out.println("记事本主页有:"+ actual);
+//    	Assert.assertEquals(actual, expected, "创建手写笔记失败");
+//    	Thread.sleep(2000);
+//    }
+//    @Test
+//    public void createRecordingNote() throws InterruptedException {
+//    	BaseAppium.id(addButtonId).click();
+//    	BaseAppium.xpath(recordingNote).click();
+//    	BaseAppium.id(recordTitleEditId).sendKeys("录音笔记");
+//    	BaseAppium.id(recordContextEditId).sendKeys("录音笔记内容");
+//    	//长按和滑动都适用
+//    	new TouchAction(androidDriver)
+//    		.press(PointOption.point(370,1130))
+//    		.waitAction(WaitOptions.waitOptions(Duration.ofMillis(5000)))  
+//    		.moveTo(PointOption.point(370,1130))
+//    		.release()
+//    		.perform();
+//    	BaseAppium.id(saveButtonId).click();
+//    	
+//    	Thread.sleep(2000);
+//    	//检查主页是否有"录音笔记"关键字
+//    	String expected = "录音笔记";
+//    	String actual = "";
+//    	try{
+//    		actual = BaseAppium.xpath(recordingNote).getText();
+//    	}catch (Exception e) {
+//    		System.out.println("找不到元素");
+//    	}
+//    	System.out.println("记事本主页有:"+ actual);
+//    	Assert.assertEquals(actual, expected, "创建录音笔记失败");
+//    	Thread.sleep(2000);
+//    }
+    @BeforeMethod
+    public void beforeMethod() {
+    }
+
+    @AfterMethod
+    public void afterMethod() {
+    }
+
+    @BeforeTest
+    public void beforeTest() throws IOException, InterruptedException {
+    	androidDriver = BaseAppium.init("com.gh.notepad", ".MainActivity");
+    	ScreenshotListener.driver = androidDriver;
+    }
+
+    @AfterTest
+    public void afterTest() {
+    	System.out.println("size:" + BaseAppium.elList(By.className(notepadList)).size());
+    	//删除建立的笔记
+    	BaseAppium.deleteList(BaseAppium.elList(By.className(notepadList)));
+    	androidDriver.quit();
+    }
+
+}

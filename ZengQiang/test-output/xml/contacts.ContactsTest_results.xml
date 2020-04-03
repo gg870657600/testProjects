@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="58.464">
+           time="56.048">
   <properties />
   
   
-            <testcase name="deleteContacts" time="14.309" classname="contacts.ContactsTest" />
-                <testcase name="editContacts" time="21.353" classname="contacts.ContactsTest" />
-                <testcase name="addContacts" time="22.802" classname="contacts.ContactsTest" />
+            <testcase name="deleteContacts" time="14.638" classname="contacts.ContactsTest" />
+                <testcase name="addContacts" time="21.098" classname="contacts.ContactsTest" />
+                <testcase name="editContacts" time="20.312" classname="contacts.ContactsTest" />
       
 </testsuite>
