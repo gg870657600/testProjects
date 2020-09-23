@@ -98,7 +98,6 @@ public class WebDriverEventListener implements AppiumWebDriverEventListener{
 //		}
 
 //		BaseAppium au=new BaseAppium(driver);
-		System.out.println("查找元素监听启动了");
 		if(BaseAppium.elementIsExist(BaseAppium.id("android:id/button1"))){
 			System.out.println("确定按钮  存在");
 			BaseAppium.id("android:id/button1").click();
